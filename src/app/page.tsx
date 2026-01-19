@@ -1,0 +1,803 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { 
+  Shield, Landmark, Calculator, Users, 
+  Target, CheckCircle, ArrowRight, Building2, Briefcase,
+  Lock, AlertTriangle, DollarSign, LineChart,
+  Wallet, FileText, GraduationCap, Clock
+} from "lucide-react";
+import { Button } from "@/components/ui/Button";
+import { SectionHeadline } from "@/components/ui/SectionHeadline";
+import { StatCard } from "@/components/ui/StatCard";
+import { FAQAccordion } from "@/components/ui/FAQAccordion";
+import { TestimonialCard } from "@/components/ui/TestimonialCard";
+import { ServiceCard } from "@/components/ui/ServiceCard";
+import { cn } from "@/lib/utils";
+import { useState } from "react";
+
+// Hero Section
+function HeroSection() {
+  return (
+    <section className="relative min-h-screen flex items-center bg-hero-gradient overflow-hidden">
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <motion.div
+          animate={{ 
+            scale: [1, 1.2, 1],
+            opacity: [0.1, 0.2, 0.1],
+          }}
+          transition={{ duration: 8, repeat: Infinity }}
+          className="absolute -top-1/4 -right-1/4 w-[800px] h-[800px] rounded-full bg-primary-green/20 blur-3xl"
+        />
+        <motion.div
+          animate={{ 
+            scale: [1.2, 1, 1.2],
+            opacity: [0.15, 0.25, 0.15],
+          }}
+          transition={{ duration: 10, repeat: Infinity }}
+          className="absolute -bottom-1/4 -left-1/4 w-[600px] h-[600px] rounded-full bg-primary-blue/20 blur-3xl"
+        />
+      </div>
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 pt-40">
+        <div className="max-w-4xl">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-white leading-tight mb-6">
+              Finally: A Clear Financial Strategy That{" "}
+              <span className="text-primary-green">Protects Your Family</span>, Optimizes Your Taxes, and Builds Lasting Wealth
+              <span className="text-white/80 text-3xl sm:text-4xl lg:text-5xl block mt-2">
+                Without the Sales Pitch
+              </span>
+            </h1>
+          </motion.div>
+
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-xl sm:text-2xl text-white/90 mb-8 max-w-3xl"
+          >
+            Get Your FREE Financial Needs Analysis and Discover Exactly Where You&apos;re Leaving Money on the Table
+            <span className="block text-primary-green font-semibold mt-2">(Valued at $5,000)</span>
+          </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="flex flex-col sm:flex-row gap-4"
+          >
+            <Button href="#schedule" size="lg" pulse>
+              Schedule My FREE Financial Needs Analysis
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </Button>
+          </motion.div>
+
+          {/* Trust Indicators */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="mt-12 flex flex-wrap gap-8 items-center"
+          >
+            <div className="flex items-center gap-2 text-white/80">
+              <CheckCircle className="w-5 h-5 text-primary-green" />
+              <span>4,500+ Families Served</span>
+            </div>
+            <div className="flex items-center gap-2 text-white/80">
+              <CheckCircle className="w-5 h-5 text-primary-green" />
+              <span>$41.6M Tax Savings</span>
+            </div>
+            <div className="flex items-center gap-2 text-white/80">
+              <CheckCircle className="w-5 h-5 text-primary-green" />
+              <span>5/5 Star Rating</span>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+
+      {/* Scroll Indicator */}
+      <motion.div
+        animate={{ y: [0, 10, 0] }}
+        transition={{ duration: 2, repeat: Infinity }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+      >
+        <div className="w-6 h-10 rounded-full border-2 border-white/30 flex justify-center pt-2">
+          <div className="w-1.5 h-3 bg-white/50 rounded-full" />
+        </div>
+      </motion.div>
+    </section>
+  );
+}
+
+// Pain Points Section
+function PainPointsSection() {
+  const painPoints = [
+    "Despite doing everything right, you still feel like you're living paycheck to paycheck",
+    "One medical emergency, one job loss, one major expense away from financial disaster",
+    "No idea where all your money is actually going",
+  ];
+
+  return (
+    <section className="py-20 lg:py-28 bg-dark-navy relative overflow-hidden">
+      <div className="absolute inset-0 pattern-bg opacity-50" />
+      
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <SectionHeadline
+          title="You're Doing Everything 'Right.' So Why Does It Still Feel Like You're Just Getting By?"
+          light
+          centered
+        />
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="max-w-3xl mx-auto text-center mb-12"
+        >
+          <p className="text-lg text-white/80 leading-relaxed">
+            You&apos;re making good money. You&apos;re maxing out your 401(k) because someone told you that&apos;s what responsible people do. You&apos;ve got life insurance through work. You pay your bills on time. You&apos;re doing everything you&apos;re &ldquo;supposed&rdquo; to do.
+          </p>
+        </motion.div>
+
+        <div className="max-w-2xl mx-auto">
+          <motion.h3
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="text-2xl font-heading font-bold text-white text-center mb-8"
+          >
+            Here&apos;s what keeps you up at 3 AM:
+          </motion.h3>
+          
+          <div className="space-y-4">
+            {painPoints.map((point, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="flex items-start gap-4 bg-white/5 backdrop-blur-sm rounded-xl p-5 border border-white/10"
+              >
+                <AlertTriangle className="w-6 h-6 text-yellow-400 flex-shrink-0 mt-0.5" />
+                <p className="text-white/90">{point}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// Problem Section
+function ProblemSection() {
+  const problems = [
+    {
+      icon: Lock,
+      title: "The 401(k) Industrial Complex",
+      description: "Locks your money away for decades while Wall Street collects fees whether you win or lose.",
+    },
+    {
+      icon: DollarSign,
+      title: "Commission-Driven Advisors",
+      description: "Push expensive products that pay them the most, not strategies that serve you best.",
+    },
+    {
+      icon: FileText,
+      title: "The Tax Code Complexity",
+      description: "Written by and for the wealthy, with loopholes kept deliberately complex so middle-class families never learn them.",
+    },
+    {
+      icon: AlertTriangle,
+      title: "Conventional Wisdom Trap",
+      description: "Advice parroted by financial gurus keeps you trapped in a cycle of deferred dreams.",
+    },
+  ];
+
+  return (
+    <section className="py-20 lg:py-28 bg-light-gray">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <SectionHeadline
+          title="Here's the truth nobody tells you:"
+          centered
+        />
+
+        <div className="grid md:grid-cols-2 gap-6 mb-12">
+          {problems.map((problem, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
+              className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 card-hover"
+            >
+              <div className="w-12 h-12 rounded-xl bg-red-50 flex items-center justify-center mb-4">
+                <problem.icon className="w-6 h-6 text-red-500" />
+              </div>
+              <h3 className="text-xl font-semibold text-dark-navy mb-2">{problem.title}</h3>
+              <p className="text-warm-gray">{problem.description}</p>
+            </motion.div>
+          ))}
+        </div>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          className="bg-gradient-to-r from-red-50 to-orange-50 rounded-2xl p-8 text-center border border-red-100"
+        >
+          <p className="text-xl text-dark-navy mb-2">
+            That&apos;s an average of
+          </p>
+          <p className="text-5xl md:text-6xl font-heading font-bold text-red-600 mb-2">
+            $100,000+
+          </p>
+          <p className="text-xl text-dark-navy">
+            bleeding out of your financial future.
+          </p>
+          <p className="text-warm-gray mt-4 max-w-2xl mx-auto">
+            Because nobody ever taught you the alternative.
+          </p>
+        </motion.div>
+
+        <div className="text-center mt-12">
+          <Button href="#schedule" size="lg">
+            Schedule My FREE Financial Needs Analysis
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// Wealthy Strategies Section
+function WealthyStrategiesSection() {
+  const strategies = [
+    {
+      icon: Landmark,
+      title: "Strategy #1: They Become Their Own Bank (Infinite Banking)",
+      description: "You put money in a savings account earning 0.5% interest. Then you turn around and pay a bank 7% interest on a car loan.",
+      expanded: "Wealthy families use properly structured life insurance policies to create their own banking system. They store wealth in tax-advantaged vehicles, borrow against it tax-free when opportunities arise, and never ask permission from a bank or the IRS to access their own capital. Same dollars. Completely different outcomes.",
+    },
+    {
+      icon: Calculator,
+      title: "Strategy #2: They Optimize for Taxes FIRST",
+      description: "You've been taught to chase investment returns. Beat the market. Find the hot stock. Meanwhile, you're losing 30-40% of your gains to taxes every year.",
+      expanded: "Wealthy families focus on keeping what they make. Tax-loss harvesting. Roth conversions. Strategic charitable giving. Cash value life insurance. 1031 exchanges. Strategies that save 15-20% on their effective tax rate. Saving 15% in taxes beats chasing an extra 2% in returns every single time.",
+    },
+    {
+      icon: Wallet,
+      title: "Strategy #3: They Prioritize Liquidity and Control",
+      description: "You've been told to lock everything in a 401(k) until you're 59½. Can't touch it without penalties. Can't use it for opportunities.",
+      expanded: "Wealthy families keep capital accessible. When a real estate deal pops up, they have cash. When markets crash, they buy. When their kid needs college tuition, they don't beg the IRS for penalty-free withdrawals. Trapped money isn't wealth. It's a future promise that might not materialize.",
+    },
+    {
+      icon: Shield,
+      title: "Strategy #4: They Use Insurance as a Wealth-Building Tool",
+      description: "You bought term life insurance because someone said 'buy term and invest the difference.'",
+      expanded: "Wealthy families use permanent insurance (designed correctly) as a tax-free growth vehicle, estate planning tool, asset protection strategy, and liquidity source. Same product category. Completely different application.",
+    },
+    {
+      icon: Target,
+      title: "Strategy #5: They Coordinate Everything",
+      description: "Your 401(k) doesn't talk to your life insurance. Your CPA files taxes but doesn't build a proactive strategy.",
+      expanded: "Wealthy families integrate everything: tax strategy, asset protection, cash flow optimization, insurance, investments, and estate planning. Every piece works together. The strategies are there. You've just never had someone willing to teach you.",
+    },
+  ];
+
+  return (
+    <section className="py-20 lg:py-28 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <SectionHeadline
+          title="What Wealthy Families Know (That Wall Street Doesn't Want You to Learn)"
+          subtitle="Wealthy families don't just 'invest more' or 'work harder.' They use completely different strategies that most middle-class families have never even heard of."
+          centered
+        />
+
+        <div className="space-y-6">
+          {strategies.map((strategy, index) => (
+            <ServiceCard
+              key={index}
+              icon={strategy.icon}
+              title={strategy.title}
+              description={strategy.description}
+              expandedContent={strategy.expanded}
+            />
+          ))}
+        </div>
+
+        <div className="text-center mt-12">
+          <Button href="#schedule" size="lg">
+            Schedule My FREE Financial Needs Analysis
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// Company Introduction Section
+function CompanySection() {
+  const differentiators = [
+    {
+      icon: GraduationCap,
+      title: "We Educate Before We Recommend",
+      description: "You'll understand the 'why' behind every strategy without the complex jargon or pressure. If we can't explain it, we don't recommend it.",
+    },
+    {
+      icon: Target,
+      title: "We Build Systems, Not Sell Products",
+      description: "We design comprehensive financial strategies that integrate tax optimization, wealth protection, cash flow management, and legacy planning.",
+    },
+    {
+      icon: LineChart,
+      title: "We're Technology-Enabled",
+      description: "Financial dashboards. Planning tools. Secure document access. You get the clarity of fintech with the wisdom of a trusted financial strategist.",
+    },
+    {
+      icon: Users,
+      title: "We're Mission-Driven",
+      description: "Financial education shouldn't be reserved for people who already have money. Hard-working families deserve the same strategies the wealthy use.",
+    },
+  ];
+
+  return (
+    <section className="py-20 lg:py-28 bg-light-gray">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <SectionHeadline
+          title="Built For Life Financial Agency"
+          subtitle="Where Families Access Wealth-Building Strategies Designed for the Ultra Rich"
+          centered
+        />
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 mb-12 max-w-3xl mx-auto text-center"
+        >
+          <p className="text-lg text-dark-navy leading-relaxed">
+            We&apos;re an <span className="font-semibold text-primary-blue">education-first, technology-enabled</span> financial strategy platform. Our mission is simple: Restore the American Dream for hard-working middle-class families by teaching you the tax-optimized wealth-building strategies typically reserved for the ultra-wealthy.
+          </p>
+        </motion.div>
+
+        <h3 className="text-2xl font-heading font-bold text-dark-navy text-center mb-8">
+          Here&apos;s How We&apos;re Different:
+        </h3>
+
+        <div className="grid md:grid-cols-2 gap-6 mb-16">
+          {differentiators.map((item, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
+              className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 card-hover"
+            >
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary-blue to-primary-green flex items-center justify-center mb-4">
+                <item.icon className="w-6 h-6 text-white" />
+              </div>
+              <h4 className="text-xl font-semibold text-dark-navy mb-2">{item.title}</h4>
+              <p className="text-warm-gray">{item.description}</p>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Stats Section */}
+        <div className="bg-gradient-to-r from-primary-blue to-dark-navy rounded-2xl p-8 md:p-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <StatCard value={4500} suffix="+" label="Families Served" light />
+            <StatCard value={41.6} prefix="$" suffix="M" decimals={1} label="Tax Savings" light />
+            <StatCard value={5} suffix="/5" label="Star Rating" light />
+            <StatCard value={98} suffix="%" label="Client Retention" light />
+          </div>
+        </div>
+
+        <div className="text-center mt-12">
+          <Button href="#schedule" size="lg">
+            Schedule My FREE Financial Needs Analysis
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// Who We Serve Section
+function WhoWeServeSection() {
+  const [activeTab, setActiveTab] = useState(0);
+
+  const personas = [
+    {
+      title: "The Aspiring Legacy-Builder",
+      icon: Users,
+      points: [
+        "You're making decent money, but feel like you're still just getting by",
+        "Tired of living paycheck to paycheck",
+        "Frustrated with conflicting financial advice from YouTube, Reddit, and relatives",
+        "Want to protect your family from catastrophe and build something lasting",
+        "Ready to stop feeling confused and start feeling confident",
+      ],
+    },
+    {
+      title: "The Successful Professional",
+      icon: Briefcase,
+      points: [
+        "Corporate executives, physicians, attorneys, engineers, contractors",
+        "High income but getting destroyed by taxes (35-50% effective rate)",
+        "Money trapped in retirement accounts you can't access without penalties",
+        "Tried working with advisors before and was underwhelmed",
+        "Want sophisticated tax strategies, not just investment management",
+      ],
+    },
+    {
+      title: "The Business Owner",
+      icon: Building2,
+      points: [
+        "Entrepreneurs, small business owners, franchisees, self-employed",
+        "Navigating complexity: lumpy income, business deductions, retirement plans",
+        "Need asset protection strategies to shield personal wealth",
+        "Want to optimize both personal and business financial structures",
+        "Looking for a partner who understands entrepreneurial challenges",
+      ],
+    },
+  ];
+
+  return (
+    <section className="py-20 lg:py-28 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <SectionHeadline
+          title="Is Built For Life Right for You?"
+          subtitle="We work with families, individuals, and business owners across the country"
+          centered
+        />
+
+        {/* Tabs */}
+        <div className="flex flex-wrap justify-center gap-4 mb-8">
+          {personas.map((persona, index) => (
+            <button
+              key={index}
+              onClick={() => setActiveTab(index)}
+              className={cn(
+                "px-6 py-3 rounded-xl font-medium transition-all cursor-pointer",
+                activeTab === index
+                  ? "bg-primary-blue text-white shadow-lg"
+                  : "bg-gray-100 text-dark-navy hover:bg-gray-200"
+              )}
+            >
+              {persona.title}
+            </button>
+          ))}
+        </div>
+
+        {/* Tab Content */}
+        <motion.div
+          key={activeTab}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3 }}
+          className="bg-light-gray rounded-2xl p-8 md:p-12 max-w-3xl mx-auto"
+        >
+          <div className="flex items-center gap-4 mb-6">
+            {(() => {
+              const IconComponent = personas[activeTab].icon;
+              return (
+                <div className="w-14 h-14 rounded-xl bg-primary-blue flex items-center justify-center">
+                  <IconComponent className="w-7 h-7 text-white" />
+                </div>
+              );
+            })()}
+            <h3 className="text-2xl font-heading font-bold text-dark-navy">
+              {personas[activeTab].title}
+            </h3>
+          </div>
+          
+          <ul className="space-y-3">
+            {personas[activeTab].points.map((point, index) => (
+              <li key={index} className="flex items-start gap-3">
+                <CheckCircle className="w-5 h-5 text-primary-green flex-shrink-0 mt-0.5" />
+                <span className="text-warm-gray">{point}</span>
+              </li>
+            ))}
+          </ul>
+        </motion.div>
+
+        {/* Not Right For Everyone */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-12 bg-amber-50 border border-amber-200 rounded-2xl p-8 max-w-3xl mx-auto"
+        >
+          <h4 className="text-xl font-semibold text-dark-navy mb-4">We&apos;re NOT Right for Everyone</h4>
+          <p className="text-warm-gray mb-4">We only work with people who:</p>
+          <ul className="space-y-2 text-warm-gray">
+            <li className="flex items-start gap-2">
+              <CheckCircle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+              Value education and want to understand their strategy
+            </li>
+            <li className="flex items-start gap-2">
+              <CheckCircle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+              Are willing to make changes if the current approach isn&apos;t working
+            </li>
+            <li className="flex items-start gap-2">
+              <CheckCircle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+              Think long-term (we&apos;re building legacies, not chasing quick wins)
+            </li>
+          </ul>
+        </motion.div>
+
+        <div className="text-center mt-12">
+          <Button href="#schedule" size="lg">
+            Schedule My FREE Financial Needs Analysis
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// Testimonials Section
+function TestimonialsSection() {
+  const testimonials = [
+    {
+      quote: "[Testimonial Placeholder] The team at Built For Life completely changed how I think about money. Within the first year, we saved over $12,000 in taxes that we didn't even know we were overpaying.",
+      name: "Client Name",
+      title: "Business Owner",
+    },
+    {
+      quote: "[Testimonial Placeholder] For the first time in my career, I feel like I have a real financial strategy instead of just hoping things work out. The education-first approach made all the difference.",
+      name: "Client Name",
+      title: "Healthcare Professional",
+    },
+    {
+      quote: "[Testimonial Placeholder] I was skeptical at first, but after our Financial Needs Analysis, I realized how much money was slipping through the cracks. Best decision we ever made.",
+      name: "Client Name",
+      title: "Engineering Executive",
+    },
+  ];
+
+  return (
+    <section className="py-20 lg:py-28 bg-light-gray">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <SectionHeadline
+          title="Real Families. Real Results."
+          centered
+        />
+
+        <div className="grid md:grid-cols-3 gap-6 mb-12">
+          {testimonials.map((testimonial, index) => (
+            <TestimonialCard
+              key={index}
+              quote={testimonial.quote}
+              name={testimonial.name}
+              title={testimonial.title}
+            />
+          ))}
+        </div>
+
+        {/* Stats Bar */}
+        <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <StatCard value={4500} suffix="+" label="Families Served" />
+            <StatCard value={41.6} prefix="$" suffix="M" decimals={1} label="Total Tax Savings" />
+            <StatCard value={127} label="Five-Star Reviews" />
+            <StatCard value={98} suffix="%" label="Client Retention" />
+          </div>
+        </div>
+
+        <div className="text-center mt-12">
+          <Button href="#schedule" size="lg">
+            Schedule My FREE Financial Needs Analysis
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// Process Section
+function ProcessSection() {
+  const steps = [
+    {
+      icon: LineChart,
+      title: "Your Current Financial Snapshot",
+      description: "Where you stand today: income, expenses, assets, liabilities, insurance coverage, tax situation",
+    },
+    {
+      icon: Target,
+      title: "Your Blind Spots",
+      description: "The top 3-5 areas where you're losing money right now",
+    },
+    {
+      icon: Calculator,
+      title: "Your Tax Optimization Opportunities",
+      description: "Specific strategies to reduce your tax burden by 10-20% (legally and ethically)",
+    },
+    {
+      icon: Shield,
+      title: "Your Protection Gaps",
+      description: "Are you over-insured, under-insured, or mis-insured? We'll show you exactly what you need",
+    },
+    {
+      icon: FileText,
+      title: "Your Custom Roadmap",
+      description: "A clear, step-by-step action plan for the next 90 days",
+    },
+    {
+      icon: Users,
+      title: "Your Questions Answered",
+      description: "No sales pitch. Just honest answers in plain English",
+    },
+  ];
+
+  return (
+    <section className="py-20 lg:py-28 bg-white" id="schedule">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <SectionHeadline
+          title="Here's What Happens Next: Your FREE Financial Needs Analysis"
+          centered
+        />
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="bg-gradient-to-r from-primary-green to-accent-green rounded-2xl p-6 md:p-8 text-center text-white mb-12 max-w-2xl mx-auto"
+        >
+          <Clock className="w-12 h-12 mx-auto mb-4 opacity-90" />
+          <p className="text-2xl font-heading font-bold mb-2">
+            60-minute comprehensive session
+          </p>
+          <p className="text-xl">
+            Valued at <span className="font-bold">$5,000</span> - Absolutely FREE
+          </p>
+        </motion.div>
+
+        <h3 className="text-2xl font-heading font-bold text-dark-navy text-center mb-8">
+          Here&apos;s What You&apos;ll Discover:
+        </h3>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          {steps.map((step, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
+              className="bg-light-gray rounded-2xl p-6 relative"
+            >
+              <div className="absolute -top-3 -left-3 w-8 h-8 rounded-full bg-primary-blue text-white flex items-center justify-center font-bold text-sm">
+                {index + 1}
+              </div>
+              <div className="w-12 h-12 rounded-xl bg-white shadow-sm flex items-center justify-center mb-4">
+                <step.icon className="w-6 h-6 text-primary-blue" />
+              </div>
+              <h4 className="text-lg font-semibold text-dark-navy mb-2">{step.title}</h4>
+              <p className="text-warm-gray text-sm">{step.description}</p>
+            </motion.div>
+          ))}
+        </div>
+
+        <div className="text-center">
+          <Button href="#schedule" size="lg" pulse>
+            Schedule My FREE Financial Needs Analysis
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// Final CTA Section
+function FinalCTASection() {
+  return (
+    <section className="py-20 lg:py-28 bg-hero-gradient relative overflow-hidden">
+      <div className="absolute inset-0">
+        <motion.div
+          animate={{ 
+            scale: [1, 1.2, 1],
+            opacity: [0.1, 0.2, 0.1],
+          }}
+          transition={{ duration: 8, repeat: Infinity }}
+          className="absolute top-1/4 right-1/4 w-[600px] h-[600px] rounded-full bg-primary-green/20 blur-3xl"
+        />
+      </div>
+
+      <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6">
+            Stop Leaving Money on the Table. Start Building the Future Your Family Deserves.
+          </h2>
+          <p className="text-xl text-white/80 mb-4">
+            Every month you wait is another month of unnecessary losses. Another month of opportunity cost.
+          </p>
+          <p className="text-lg text-white/70 mb-8">
+            The best time to fix your financial strategy was five years ago.<br />
+            <span className="text-primary-green font-semibold">The second-best time is right now.</span>
+          </p>
+
+          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 mb-8 inline-block">
+            <p className="text-white font-medium">
+              <span className="text-yellow-400">Limited Availability:</span> We only accept 12 new families per month to maintain quality and personalized service.
+            </p>
+          </div>
+
+          <div>
+            <Button href="#schedule" size="lg" pulse>
+              Schedule My FREE Financial Needs Analysis
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </Button>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
+
+// FAQ Section
+function FAQSection() {
+  const faqs = [
+    {
+      question: "Do I need to be wealthy to work with you?",
+      answer: "No. We work with families earning $50K+. If you're ready to build wealth, we're ready to help.",
+    },
+    {
+      question: "How is this different from other financial advisors?",
+      answer: "We educate first, recommend second. No product-pushing. No AUM fees. No commissions driving our advice.",
+    },
+    {
+      question: "What does this cost?",
+      answer: "The Financial Needs Analysis is 100% free. If you choose to work with us after that, we'll discuss pricing transparently based on your needs.",
+    },
+    {
+      question: "I've been burned by financial advisors before. Why should I trust you?",
+      answer: "Read our reviews. Talk to our clients. Experience the difference yourself in the free session. We earn trust through results, not promises.",
+    },
+  ];
+
+  return (
+    <section className="py-20 lg:py-28 bg-white">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <SectionHeadline
+          title="Frequently Asked Questions"
+          centered
+        />
+
+        <FAQAccordion items={faqs} />
+      </div>
+    </section>
+  );
+}
+
+// Main Page Component
+export default function HomePage() {
+  return (
+    <>
+      <HeroSection />
+      <PainPointsSection />
+      <ProblemSection />
+      <WealthyStrategiesSection />
+      <CompanySection />
+      <WhoWeServeSection />
+      <TestimonialsSection />
+      <ProcessSection />
+      <FinalCTASection />
+      <FAQSection />
+    </>
+  );
+}
