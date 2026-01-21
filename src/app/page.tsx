@@ -23,7 +23,7 @@ function HeroSection() {
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
-          animate={{ 
+          animate={{
             scale: [1, 1.2, 1],
             opacity: [0.1, 0.2, 0.1],
           }}
@@ -31,7 +31,7 @@ function HeroSection() {
           className="absolute -top-1/4 -right-1/4 w-[800px] h-[800px] rounded-full bg-primary-green/20 blur-3xl"
         />
         <motion.div
-          animate={{ 
+          animate={{
             scale: [1.2, 1, 1.2],
             opacity: [0.15, 0.25, 0.15],
           }}
@@ -41,61 +41,81 @@ function HeroSection() {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 pt-40">
-        <div className="max-w-4xl">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-white leading-tight mb-6">
-              Finally: A Clear Financial Strategy That{" "}
-              <span className="text-primary-green">Protects Your Family</span>, Optimizes Your Taxes, and Builds Lasting Wealth
-              <span className="text-white/80 text-3xl sm:text-4xl lg:text-5xl block mt-2">
-                Without the Sales Pitch
-              </span>
-            </h1>
-          </motion.div>
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          {/* Left Column - Text Content */}
+          <div>
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              <h1 className="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-logo font-bold text-white leading-tight mb-6 uppercase tracking-wide">
+                Finally: A Clear Financial Strategy That{" "}
+                <span className="text-primary-green">Protects Your Family</span>, Optimizes Your Taxes, and Builds Lasting Wealth
+                <span className="text-white/80 text-2xl sm:text-3xl lg:text-4xl block mt-2">
+                  Without the Sales Pitch
+                </span>
+              </h1>
+            </motion.div>
 
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-xl sm:text-2xl text-white/90 mb-8 max-w-3xl"
-          >
-            Get Your FREE Financial Needs Analysis and Discover Exactly Where You&apos;re Leaving Money on the Table
-            <span className="block text-primary-green font-semibold mt-2">(Valued at $5,000)</span>
-          </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="text-lg sm:text-xl text-white/90 mb-8"
+            >
+              Get Your FREE Financial Needs Analysis and Discover Exactly Where You&apos;re Leaving Money on the Table
+              <span className="block text-primary-green font-semibold mt-2">(Valued at $5,000)</span>
+            </motion.p>
 
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="flex flex-col sm:flex-row gap-4"
-          >
-            <Button href="#schedule" size="lg" pulse>
-              Schedule My FREE Financial Needs Analysis
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
-          </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="flex flex-col sm:flex-row gap-4"
+            >
+              <Button href="#schedule" size="lg" pulse>
+                Schedule My FREE Financial Needs Analysis
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+            </motion.div>
 
-          {/* Trust Indicators */}
+            {/* Trust Indicators */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+              className="mt-10 flex flex-wrap gap-6 items-center"
+            >
+              <div className="flex items-center gap-2 text-white/80">
+                <CheckCircle className="w-5 h-5 text-primary-green" />
+                <span>4,500+ Families Served</span>
+              </div>
+              <div className="flex items-center gap-2 text-white/80">
+                <CheckCircle className="w-5 h-5 text-primary-green" />
+                <span>$41.6M Tax Savings</span>
+              </div>
+              <div className="flex items-center gap-2 text-white/80">
+                <CheckCircle className="w-5 h-5 text-primary-green" />
+                <span>5/5 Star Rating</span>
+              </div>
+            </motion.div>
+          </div>
+
+          {/* Right Column - Video Placeholder */}
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="mt-12 flex flex-wrap gap-8 items-center"
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="hidden lg:block"
           >
-            <div className="flex items-center gap-2 text-white/80">
-              <CheckCircle className="w-5 h-5 text-primary-green" />
-              <span>4,500+ Families Served</span>
-            </div>
-            <div className="flex items-center gap-2 text-white/80">
-              <CheckCircle className="w-5 h-5 text-primary-green" />
-              <span>$41.6M Tax Savings</span>
-            </div>
-            <div className="flex items-center gap-2 text-white/80">
-              <CheckCircle className="w-5 h-5 text-primary-green" />
-              <span>5/5 Star Rating</span>
+            <div className="aspect-video bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 flex items-center justify-center">
+              <div className="text-center text-white/60">
+                <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-4">
+                  <div className="w-0 h-0 border-t-8 border-t-transparent border-l-12 border-l-white/80 border-b-8 border-b-transparent ml-1" />
+                </div>
+                <p className="text-sm">Video Coming Soon</p>
+              </div>
             </div>
           </motion.div>
         </div>
@@ -219,8 +239,8 @@ function ProblemSection() {
               transition={{ delay: index * 0.1 }}
               className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 card-hover"
             >
-              <div className="w-12 h-12 rounded-xl bg-red-50 flex items-center justify-center mb-4">
-                <problem.icon className="w-6 h-6 text-red-500" />
+              <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-4">
+                <problem.icon className="w-6 h-6 text-primary-blue" />
               </div>
               <h3 className="text-xl font-semibold text-dark-navy mb-2">{problem.title}</h3>
               <p className="text-warm-gray">{problem.description}</p>
