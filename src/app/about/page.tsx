@@ -60,7 +60,7 @@ function OurStorySection() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="space-y-6 text-lg text-warm-gray leading-relaxed"
+            className="space-y-6 text-lg text-warm-gray leading-relaxed text-center"
           >
             <p>
               <span className="text-dark-navy font-semibold">The financial services industry has a problem.</span>
@@ -128,14 +128,56 @@ function MissionSection() {
             Our mission is to change that.
           </p>
 
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-            <p className="text-white/90 text-lg leading-relaxed mb-4">
-              We are committed to guide you through the complex world of finance, arming you with the wisdom to shape your destiny and build your future.
-            </p>
-            <p className="text-primary-green font-semibold text-xl">
-              Together, we&apos;ll rewrite the narrative of the American Dream, restoring its promise and ensuring that prosperity is not just a dream, but a reality for all.
-            </p>
-          </div>
+          <motion.div
+            animate={{
+              boxShadow: [
+                "0 0 30px rgba(76, 175, 80, 0.2)",
+                "0 0 60px rgba(76, 175, 80, 0.4)",
+                "0 0 30px rgba(76, 175, 80, 0.2)"
+              ]
+            }}
+            transition={{ duration: 3, repeat: Infinity }}
+            className="relative overflow-hidden rounded-2xl"
+          >
+            {/* Animated gradient border */}
+            <div className="absolute inset-0 bg-gradient-to-r from-primary-green via-primary-blue to-primary-green bg-[length:200%_100%] animate-gradient rounded-2xl" />
+
+            <div className="relative m-[2px] bg-dark-navy/90 backdrop-blur-sm rounded-2xl p-8">
+              {/* Floating particles effect */}
+              <div className="absolute inset-0 overflow-hidden rounded-2xl">
+                <motion.div
+                  animate={{ y: [-20, 20], x: [-10, 10] }}
+                  transition={{ duration: 4, repeat: Infinity, repeatType: "reverse" }}
+                  className="absolute top-4 left-8 w-2 h-2 bg-primary-green/30 rounded-full"
+                />
+                <motion.div
+                  animate={{ y: [20, -20], x: [10, -10] }}
+                  transition={{ duration: 5, repeat: Infinity, repeatType: "reverse" }}
+                  className="absolute bottom-6 right-12 w-3 h-3 bg-primary-blue/30 rounded-full"
+                />
+                <motion.div
+                  animate={{ y: [-15, 15] }}
+                  transition={{ duration: 3.5, repeat: Infinity, repeatType: "reverse" }}
+                  className="absolute top-1/2 right-8 w-2 h-2 bg-primary-green/20 rounded-full"
+                />
+              </div>
+
+              <div className="relative">
+                <p className="text-white text-lg leading-relaxed mb-6">
+                  We are committed to guide you through the complex world of finance, arming you with the wisdom to shape your destiny and build your future.
+                </p>
+                <motion.p
+                  animate={{
+                    backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+                  }}
+                  transition={{ duration: 5, repeat: Infinity }}
+                  className="text-xl md:text-2xl font-bold bg-gradient-to-r from-primary-green via-white to-primary-green bg-[length:200%_auto] bg-clip-text text-transparent"
+                >
+                  Together, we&apos;ll rewrite the narrative of the American Dream, restoring its promise and ensuring that prosperity is not just a dream, but a reality for all.
+                </motion.p>
+              </div>
+            </div>
+          </motion.div>
         </motion.div>
       </div>
     </section>
@@ -154,14 +196,14 @@ function VisionSection() {
             viewport={{ once: true }}
           >
             <span className="text-sm font-medium text-primary-green uppercase tracking-wider">Our Vision</span>
-            <h2 className="text-3xl md:text-4xl font-logo font-bold text-dark-navy mt-2 mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-logo font-bold text-dark-navy mt-2 mb-6">
               To Be the Standard Others Compare Themselves To
             </h2>
             
-            <p className="text-lg text-warm-gray leading-relaxed mb-6">
+            <p className="text-lg text-warm-gray leading-relaxed mb-3">
               Our vision is bold: To be the number one company in the world that everyone in financial services compares themselves to.
             </p>
-            <p className="text-lg text-warm-gray leading-relaxed mb-6">
+            <p className="text-lg text-warm-gray leading-relaxed mb-3">
               We&apos;ve proven that education-first, mission-driven financial guidance can transform lives at scale.
             </p>
             <p className="text-lg text-warm-gray leading-relaxed">
@@ -310,7 +352,7 @@ function ValuesSection() {
           centered
         />
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="flex flex-wrap justify-center gap-6 max-w-5xl mx-auto">
           {values.map((value, index) => (
             <motion.div
               key={index}
@@ -318,10 +360,10 @@ function ValuesSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 card-hover"
+              className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 card-hover w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]"
             >
-              <div className="w-10 h-10 rounded-full bg-primary-green/10 flex items-center justify-center mb-4">
-                <Heart className="w-5 h-5 text-primary-green" />
+              <div className="w-10 h-10 rounded-full bg-primary-blue/10 flex items-center justify-center mb-4">
+                <Heart className="w-5 h-5 text-primary-blue" />
               </div>
               <h3 className="text-xl font-semibold text-dark-navy mb-2">{value.title}</h3>
               <p className="text-warm-gray">{value.description}</p>
