@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import "tailwindcss";
 
@@ -17,7 +17,7 @@
 
   --font-heading: 'Fraunces', Georgia, serif;
   --font-body: 'Work Sans', system-ui, sans-serif;
-  --font-logo: 'Bebas Neue', 'Arial Narrow', sans-serif;
+  --font-logo: 'Montserrat', 'Arial', sans-serif;
 }
 
 @keyframes pulse-subtle {

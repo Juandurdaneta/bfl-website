@@ -489,19 +489,34 @@ function ImpactSection() {
 function TestimonialsSection() {
   const testimonials = [
     {
-      quote: "[Testimonial Placeholder] Built For Life helped us save over $15,000 in taxes in our first year. More importantly, they taught us how to think about money differently.",
-      name: "Client Name",
-      title: "Small Business Owner",
+      quote: "It is great to work with an agency whose main priority is educating their clients and asking enough questions to specifically design a plan that fits their needs. Highly recommend this company.",
+      name: "Dianne Loflin",
+      title: "Verified Client",
     },
     {
-      quote: "[Testimonial Placeholder] Finally, a financial advisor who actually explains things in plain English. No jargon, no pressure, just solid advice.",
-      name: "Client Name",
-      title: "Government Contractor",
+      quote: "I absolutely love working with this team! They do what is right for the client! BFL is an amazing agency! They took the time to educate us about how money can work for us, and helped us set up a retirement plan. We have referred so many people to them!",
+      name: "Ashley Harrison",
+      title: "Verified Client",
     },
     {
-      quote: "[Testimonial Placeholder] The team at Built For Life genuinely cares about our family's success. They're partners, not salespeople.",
-      name: "Client Name",
-      title: "Healthcare Executive",
+      quote: "Built for Life Financial Agency is an agency with high integrity and quality agents! We have been extremely pleased with their professionalism and how they put the clients needs first!",
+      name: "Nancy B.",
+      title: "Verified Client",
+    },
+    {
+      quote: "I recently had the pleasure of working with the Built For Life Agency and I must say that my experience with their financial services and life insurance offerings has been nothing short of outstanding.",
+      name: "Curt Narvesen",
+      title: "Verified Client",
+    },
+    {
+      quote: "The service that you receive at BFL Agency is more like an experience. The services provided and the attention to detail given to each client is some of the best I've seen in the industry today. It's all about relationships.",
+      name: "Michael Mastrangelo",
+      title: "Verified Client",
+    },
+    {
+      quote: "BFL Agency went above and beyond to educate me and help make sure all of my family needs were met. Would highly recommend!",
+      name: "Jerry Harrison",
+      title: "Verified Client",
     },
   ];
 
@@ -513,7 +528,7 @@ function TestimonialsSection() {
           centered
         />
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {testimonials.map((testimonial, index) => (
             <TestimonialCard
               key={index}

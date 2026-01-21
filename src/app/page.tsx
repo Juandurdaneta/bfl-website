@@ -570,19 +570,19 @@ function WhoWeServeSection() {
 function TestimonialsSection() {
   const testimonials = [
     {
-      quote: "[Testimonial Placeholder] The team at Built For Life completely changed how I think about money. Within the first year, we saved over $12,000 in taxes that we didn't even know we were overpaying.",
-      name: "Client Name",
-      title: "Business Owner",
+      quote: "I absolutely love working with this team! They do what is right for the client! BFL is an amazing agency! They took the time to educate us about how money can work for us, and helped us set up a retirement plan.",
+      name: "Ashley Harrison",
+      title: "Verified Client",
     },
     {
-      quote: "[Testimonial Placeholder] For the first time in my career, I feel like I have a real financial strategy instead of just hoping things work out. The education-first approach made all the difference.",
-      name: "Client Name",
-      title: "Healthcare Professional",
+      quote: "The service that you receive at BFL Agency is more like an experience. The services provided and the attention to detail given to each client is some of the best I've seen in the industry today.",
+      name: "Michael Mastrangelo",
+      title: "Verified Client",
     },
     {
-      quote: "[Testimonial Placeholder] I was skeptical at first, but after our Financial Needs Analysis, I realized how much money was slipping through the cracks. Best decision we ever made.",
-      name: "Client Name",
-      title: "Engineering Executive",
+      quote: "It is great to work with an agency whose main priority is educating their clients and asking enough questions to specifically design a plan that fits their needs. Highly recommend!",
+      name: "Dianne Loflin",
+      title: "Verified Client",
     },
   ];
 
