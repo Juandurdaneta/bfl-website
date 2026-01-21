@@ -49,47 +49,124 @@ function ServicesHero() {
 // Introduction Section
 function IntroSection() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center">
+        {/* Comparison Cards */}
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-16">
+          {/* Traditional Approach */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="relative"
           >
-            <p className="text-lg text-warm-gray leading-relaxed mb-8">
-              Most financial firms specialize in one thing: investments, insurance, or tax preparation. They hand you a piece of the puzzle and call it a plan.
-            </p>
-            <p className="text-xl text-dark-navy font-semibold mb-8">
-              We do something different.
-            </p>
-            <p className="text-lg text-warm-gray leading-relaxed">
-              At Built For Life, we integrate every aspect of your financial life into one cohesive strategy. Tax optimization talks to insurance planning. Cash flow management coordinates with retirement funding. Asset protection aligns with legacy planning.
-            </p>
-            <p className="text-2xl font-heading font-bold text-primary-blue mt-8">
-              Because wealth isn&apos;t built in silos. It&apos;s built through systems.
-            </p>
+            <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 rounded-3xl transform rotate-1" />
+            <div className="relative bg-white rounded-3xl p-8 border border-gray-200 shadow-lg">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center">
+                  <span className="text-2xl">🏢</span>
+                </div>
+                <h3 className="text-xl font-heading font-bold text-warm-gray">Most Financial Firms</h3>
+              </div>
+              <p className="text-warm-gray leading-relaxed mb-6">
+                Specialize in <span className="font-semibold">one thing</span>: investments, insurance, or tax preparation. They hand you a piece of the puzzle and call it a plan.
+              </p>
+              <div className="space-y-3">
+                {["Fragmented advice", "Siloed strategies", "Reactive approach", "Product-focused"].map((item, index) => (
+                  <div key={index} className="flex items-center gap-3 text-warm-gray">
+                    <div className="w-5 h-5 rounded-full bg-gray-200 flex items-center justify-center">
+                      <span className="text-xs">✕</span>
+                    </div>
+                    <span>{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Our Approach */}
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="relative"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-primary-blue to-primary-green rounded-3xl transform -rotate-1" />
+            <div className="relative bg-gradient-to-br from-dark-navy to-primary-blue rounded-3xl p-8 shadow-xl">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
+                  <span className="text-2xl">🎯</span>
+                </div>
+                <h3 className="text-xl font-heading font-bold text-white">We Do Something Different</h3>
+              </div>
+              <p className="text-white/90 leading-relaxed mb-6">
+                We <span className="font-semibold text-primary-green">integrate every aspect</span> of your financial life into one cohesive strategy that works together.
+              </p>
+              <div className="space-y-3">
+                {[
+                  "Tax optimization ↔ Insurance planning",
+                  "Cash flow ↔ Retirement funding",
+                  "Asset protection ↔ Legacy planning",
+                  "Education-first approach"
+                ].map((item, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, x: 10 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.4 + index * 0.1 }}
+                    className="flex items-center gap-3 text-white/90"
+                  >
+                    <div className="w-5 h-5 rounded-full bg-primary-green flex items-center justify-center">
+                      <CheckCircle className="w-3 h-3 text-white" />
+                    </div>
+                    <span>{item}</span>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
           </motion.div>
         </div>
+
+        {/* Central Message */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <motion.p
+            animate={{
+              backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+            }}
+            transition={{ duration: 5, repeat: Infinity }}
+            className="text-3xl md:text-4xl font-heading font-bold bg-gradient-to-r from-primary-blue via-primary-green to-primary-blue bg-[length:200%_auto] bg-clip-text text-transparent"
+          >
+            Because wealth isn&apos;t built in silos. It&apos;s built through systems.
+          </motion.p>
+        </motion.div>
 
         {/* Visual Diagram */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="mt-16 max-w-3xl mx-auto"
+          className="max-w-6xl mx-auto"
         >
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-primary-blue/10 to-primary-green/10 rounded-3xl blur-xl" />
+            <div className="absolute inset-0 bg-gradient-to-r from-primary-blue/20 to-primary-green/20 rounded-3xl blur-2xl" />
             <div className="relative bg-white rounded-3xl p-8 shadow-xl border border-gray-100">
+              <h4 className="text-center text-lg font-semibold text-dark-navy mb-8">Our Integrated Approach</h4>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 {[
-                  { icon: Shield, label: "Wealth Protection" },
-                  { icon: Calculator, label: "Tax Strategy" },
-                  { icon: Wallet, label: "Cash Flow" },
-                  { icon: Briefcase, label: "Business Planning" },
-                  { icon: Laptop, label: "Technology" },
-                  { icon: GraduationCap, label: "Education" },
+                  { icon: Shield, label: "Wealth Protection", color: "from-blue-500 to-blue-600" },
+                  { icon: Calculator, label: "Tax Strategy", color: "from-green-500 to-green-600" },
+                  { icon: Wallet, label: "Cash Flow", color: "from-primary-blue to-primary-blue-dark" },
+                  { icon: Briefcase, label: "Business Planning", color: "from-primary-green to-primary-green-dark" },
+                  { icon: Laptop, label: "Technology", color: "from-blue-600 to-primary-blue" },
+                  { icon: GraduationCap, label: "Education", color: "from-green-600 to-primary-green" },
                 ].map((item, index) => (
                   <motion.div
                     key={index}
@@ -97,18 +174,26 @@ function IntroSection() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: index * 0.1 }}
-                    className="flex flex-col items-center p-4 rounded-xl bg-light-gray"
+                    whileHover={{ scale: 1.05, y: -5 }}
+                    className="flex flex-col items-center p-5 rounded-xl bg-light-gray hover:shadow-lg transition-shadow cursor-pointer"
                   >
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary-blue to-primary-green flex items-center justify-center mb-3">
-                      <item.icon className="w-6 h-6 text-white" />
+                    <div className={cn("w-14 h-14 rounded-xl bg-gradient-to-br flex items-center justify-center mb-3 shadow-md", item.color)}>
+                      <item.icon className="w-7 h-7 text-white" />
                     </div>
                     <span className="text-sm font-medium text-dark-navy text-center">{item.label}</span>
                   </motion.div>
                 ))}
               </div>
-              <div className="mt-6 text-center">
-                <p className="text-primary-blue font-semibold">All Working Together</p>
-              </div>
+              <motion.div
+                animate={{ scale: [1, 1.05, 1] }}
+                transition={{ duration: 2, repeat: Infinity }}
+                className="mt-8 text-center"
+              >
+                <div className="inline-flex items-center gap-2 bg-gradient-to-r from-primary-blue to-primary-green text-white px-6 py-3 rounded-full font-semibold shadow-lg">
+                  <Target className="w-5 h-5" />
+                  All Working Together For You
+                </div>
+              </motion.div>
             </div>
           </div>
         </motion.div>
@@ -167,19 +252,30 @@ function ServiceDetail({
           </div>
 
           {/* Problem Statement */}
-          <div className="bg-red-50 border-l-4 border-red-400 rounded-r-xl p-6 mb-8">
+          <div className="bg-blue-50 border-l-4 border-primary-blue rounded-r-xl p-6 mb-8">
             <p className="text-dark-navy leading-relaxed">{problem}</p>
           </div>
 
           {/* Our Approach */}
           <div className="mb-8">
             <h3 className="text-xl font-semibold text-dark-navy mb-4">Our Approach:</h3>
-            <div className="space-y-3">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               {approach.map((item, index) => (
-                <div key={index} className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary-green flex-shrink-0 mt-0.5" />
-                  <span className="text-warm-gray">{item}</span>
-                </div>
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  className="bg-gradient-to-br from-primary-blue/5 to-primary-green/5 rounded-xl p-4 border border-primary-blue/20"
+                >
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 rounded-full bg-primary-blue text-white flex items-center justify-center font-bold text-sm flex-shrink-0">
+                      {index + 1}
+                    </div>
+                    <span className="text-dark-navy text-sm leading-relaxed">{item}</span>
+                  </div>
+                </motion.div>
               ))}
             </div>
           </div>
@@ -224,8 +320,8 @@ function ServiceDetail({
             <div className="grid md:grid-cols-2 gap-3">
               {benefits.map((benefit, index) => (
                 <div key={index} className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-primary-green/10 flex items-center justify-center flex-shrink-0">
-                    <CheckCircle className="w-4 h-4 text-primary-green" />
+                  <div className="w-6 h-6 rounded-full bg-primary-blue/10 flex items-center justify-center flex-shrink-0">
+                    <CheckCircle className="w-4 h-4 text-primary-blue" />
                   </div>
                   <span className="text-warm-gray">{benefit}</span>
                 </div>

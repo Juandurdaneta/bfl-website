@@ -252,7 +252,7 @@ function ProblemSection() {
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="bg-gradient-to-r from-red-50 to-orange-50 rounded-2xl p-8 text-center border border-red-100"
+          className="p-8 text-center"
         >
           <p className="text-xl text-dark-navy mb-2">
             That&apos;s an average of
@@ -382,7 +382,7 @@ function CompanySection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 mb-12 max-w-3xl mx-auto text-center"
+          className="p-8 mb-12 max-w-3xl mx-auto text-center"
         >
           <p className="text-lg text-dark-navy leading-relaxed">
             We&apos;re an <span className="font-semibold text-primary-blue">education-first, technology-enabled</span> financial strategy platform. Our mission is simple: Restore the American Dream for hard-working middle-class families by teaching you the tax-optimized wealth-building strategies typically reserved for the ultra-wealthy.
@@ -536,21 +536,21 @@ function WhoWeServeSection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-12 bg-amber-50 border border-amber-200 rounded-2xl p-8 max-w-3xl mx-auto"
+          className="mt-12 p-8 max-w-3xl mx-auto"
         >
           <h4 className="text-xl font-semibold text-dark-navy mb-4">We&apos;re NOT Right for Everyone</h4>
           <p className="text-warm-gray mb-4">We only work with people who:</p>
           <ul className="space-y-2 text-warm-gray">
             <li className="flex items-start gap-2">
-              <CheckCircle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+              <CheckCircle className="w-5 h-5 text-primary-blue flex-shrink-0 mt-0.5" />
               Value education and want to understand their strategy
             </li>
             <li className="flex items-start gap-2">
-              <CheckCircle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+              <CheckCircle className="w-5 h-5 text-primary-blue flex-shrink-0 mt-0.5" />
               Are willing to make changes if the current approach isn&apos;t working
             </li>
             <li className="flex items-start gap-2">
-              <CheckCircle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
+              <CheckCircle className="w-5 h-5 text-primary-blue flex-shrink-0 mt-0.5" />
               Think long-term (we&apos;re building legacies, not chasing quick wins)
             </li>
           </ul>
@@ -664,7 +664,7 @@ function ProcessSection() {
     <section className="py-20 lg:py-28 bg-white" id="schedule">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeadline
-          title="Here's What Happens Next: Your FREE Financial Needs Analysis"
+          title={<>Here&apos;s What Happens Next: Your FREE<br />Financial Needs Analysis</>}
           centered
         />
 
@@ -683,7 +683,7 @@ function ProcessSection() {
           </p>
         </motion.div>
 
-        <h3 className="text-2xl font-heading font-bold text-dark-navy text-center mb-8">
+        <h3 className="text-3xl md:text-4xl font-heading font-bold text-dark-navy text-center mb-8">
           Here&apos;s What You&apos;ll Discover:
         </h3>
 
@@ -740,29 +740,39 @@ function FinalCTASection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6">
             Stop Leaving Money on the Table. Start Building the Future Your Family Deserves.
           </h2>
           <p className="text-xl text-white/80 mb-4">
             Every month you wait is another month of unnecessary losses. Another month of opportunity cost.
           </p>
           <p className="text-lg text-white/70 mb-8">
-            The best time to fix your financial strategy was five years ago.<br />
-            <span className="text-primary-green font-semibold">The second-best time is right now.</span>
+            The best time to fix your financial strategy was five years ago. <span className="text-primary-green font-semibold">The second-best time is right now.</span>
           </p>
 
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 mb-8 inline-block">
-            <p className="text-white font-medium">
-              <span className="text-yellow-400">Limited Availability:</span> We only accept 12 new families per month to maintain quality and personalized service.
-            </p>
-          </div>
-
-          <div>
+          <div className="mb-8">
             <Button href="#schedule" size="lg" pulse>
               Schedule My FREE Financial Needs Analysis
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
           </div>
+
+          <motion.div
+            animate={{
+              boxShadow: [
+                "0 0 20px rgba(76, 175, 80, 0.3)",
+                "0 0 40px rgba(76, 175, 80, 0.5)",
+                "0 0 20px rgba(76, 175, 80, 0.3)"
+              ]
+            }}
+            transition={{ duration: 2, repeat: Infinity }}
+            className="relative bg-gradient-to-r from-primary-green/20 to-primary-blue/20 backdrop-blur-sm rounded-xl p-6 inline-block border border-primary-green/50"
+          >
+            <div className="absolute inset-0 bg-gradient-to-r from-primary-green/10 to-transparent rounded-xl animate-shimmer" />
+            <p className="relative text-white font-medium text-lg">
+              <span className="text-primary-green font-bold">Limited Availability:</span> We only accept <span className="text-white font-bold text-xl">12</span> new families per month to maintain quality and personalized service.
+            </p>
+          </motion.div>
         </motion.div>
       </div>
     </section>
