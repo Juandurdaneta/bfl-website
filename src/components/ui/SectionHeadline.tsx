@@ -2,9 +2,10 @@
 
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
+import { ReactNode } from "react";
 
 interface SectionHeadlineProps {
-  title: string;
+  title: ReactNode;
   subtitle?: string;
   centered?: boolean;
   light?: boolean;
