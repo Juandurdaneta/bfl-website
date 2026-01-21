@@ -561,18 +561,9 @@ function FinalCTA() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-logo font-bold text-white mb-6">
             Ready to Build Financial Freedom For Life?
           </h2>
-          <p className="text-xl text-white/80 mb-4">
-            The best time to optimize your financial strategy was five years ago.
+          <p className="text-xl text-white/80 mb-8">
+            The best time to optimize your financial strategy was five years ago. <span className="text-primary-green font-semibold">The second-best time is today.</span>
           </p>
-          <p className="text-lg text-white/70 mb-8">
-            <span className="text-primary-green font-semibold">The second-best time is today.</span>
-          </p>
-
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 mb-8 inline-block">
-            <p className="text-white">
-              Schedule your <span className="font-bold">FREE Financial Needs Analysis</span> (valued at $5,000) and discover exactly where you&apos;re losing money.
-            </p>
-          </div>
 
           <div className="mb-4">
             <Button href="#schedule" size="lg" pulse>
