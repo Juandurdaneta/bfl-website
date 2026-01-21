@@ -1,9 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { 
+import {
   GraduationCap, Target, Cog, RefreshCw, Heart,
-  ArrowRight, Users
+  ArrowRight
 } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { SectionHeadline } from "@/components/ui/SectionHeadline";
@@ -375,59 +375,6 @@ function ValuesSection() {
   );
 }
 
-// Team Section
-function TeamSection() {
-  const teamMembers = [
-    {
-      name: "[Team Member Name]",
-      title: "Founder & CEO",
-      quote: "Every family deserves access to the strategies that build real wealth.",
-    },
-    {
-      name: "[Team Member Name]",
-      title: "Financial Strategist",
-      quote: "Education is the foundation of every successful financial plan.",
-    },
-    {
-      name: "[Team Member Name]",
-      title: "Tax Strategy Specialist",
-      quote: "The tax code rewards those who understand it.",
-    },
-  ];
-
-  return (
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeadline
-          title="Meet the Team"
-          subtitle="Dedicated professionals committed to your financial success"
-          centered
-        />
-
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          {teamMembers.map((member, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className="text-center"
-            >
-              <div className="w-32 h-32 rounded-full bg-gradient-to-br from-primary-blue to-primary-green mx-auto mb-4 flex items-center justify-center">
-                <Users className="w-16 h-16 text-white/80" />
-              </div>
-              <h3 className="text-xl font-semibold text-dark-navy">{member.name}</h3>
-              <p className="text-primary-blue font-medium mb-3">{member.title}</p>
-              <p className="text-warm-gray italic">&ldquo;{member.quote}&rdquo;</p>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
 // Community Impact Section
 function ImpactSection() {
   const impactStats = [
@@ -614,7 +561,6 @@ export default function AboutPage() {
       <VisionSection />
       <ApproachSection />
       <ValuesSection />
-      <TeamSection />
       <ImpactSection />
       <TestimonialsSection />
       <FinalCTA />
