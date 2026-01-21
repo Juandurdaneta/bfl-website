@@ -33,7 +33,7 @@ export function SectionHeadline({
     >
       <h2
         className={cn(
-          "text-3xl md:text-4xl lg:text-5xl font-heading font-bold leading-tight mb-4",
+          "text-3xl md:text-4xl lg:text-5xl font-logo font-bold leading-tight mb-4 uppercase tracking-wide",
           light ? "text-white" : "text-dark-navy"
         )}
       >
