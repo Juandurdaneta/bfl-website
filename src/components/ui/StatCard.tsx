@@ -68,7 +68,7 @@ export function StatCard({
     >
       <div
         className={cn(
-          "text-4xl md:text-5xl font-bold font-heading mb-2",
+          "text-4xl md:text-5xl font-bold font-logo mb-2",
           light ? "text-white" : "text-primary-blue"
         )}
       >

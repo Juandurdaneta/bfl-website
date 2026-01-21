@@ -170,7 +170,7 @@ function PainPointsSection() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="text-2xl font-heading font-bold text-white text-center mb-8"
+            className="text-2xl font-logo font-bold text-white text-center mb-8"
           >
             Here&apos;s what keeps you up at 3 AM:
           </motion.h3>
@@ -257,7 +257,7 @@ function ProblemSection() {
           <p className="text-xl text-dark-navy mb-2">
             That&apos;s an average of
           </p>
-          <p className="text-5xl md:text-6xl font-heading font-bold text-red-600 mb-2">
+          <p className="text-5xl md:text-6xl font-logo font-bold text-red-600 mb-2">
             $100,000+
           </p>
           <p className="text-xl text-dark-navy">
@@ -389,7 +389,7 @@ function CompanySection() {
           </p>
         </motion.div>
 
-        <h3 className="text-2xl font-heading font-bold text-dark-navy text-center mb-8">
+        <h3 className="text-2xl font-logo font-bold text-dark-navy text-center mb-8">
           Here&apos;s How We&apos;re Different:
         </h3>
 
@@ -516,7 +516,7 @@ function WhoWeServeSection() {
                 </div>
               );
             })()}
-            <h3 className="text-2xl font-heading font-bold text-dark-navy">
+            <h3 className="text-2xl font-logo font-bold text-dark-navy">
               {personas[activeTab].title}
             </h3>
           </div>
@@ -675,7 +675,7 @@ function ProcessSection() {
           className="bg-gradient-to-r from-primary-green to-accent-green rounded-2xl p-6 md:p-8 text-center text-white mb-12 max-w-2xl mx-auto"
         >
           <Clock className="w-12 h-12 mx-auto mb-4 opacity-90" />
-          <p className="text-2xl font-heading font-bold mb-2">
+          <p className="text-2xl font-logo font-bold mb-2">
             60-minute comprehensive session
           </p>
           <p className="text-xl">
@@ -683,7 +683,7 @@ function ProcessSection() {
           </p>
         </motion.div>
 
-        <h3 className="text-3xl md:text-4xl font-heading font-bold text-dark-navy text-center mb-8">
+        <h3 className="text-3xl md:text-4xl font-logo font-bold text-dark-navy text-center mb-8">
           Here&apos;s What You&apos;ll Discover:
         </h3>
 
@@ -740,7 +740,7 @@ function FinalCTASection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-logo font-bold text-white mb-6">
             Stop Leaving Money on the Table. Start Building the Future Your Family Deserves.
           </h2>
           <p className="text-xl text-white/80 mb-4">

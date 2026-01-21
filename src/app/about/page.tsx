@@ -28,7 +28,7 @@ function AboutHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-white leading-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-logo font-bold text-white leading-tight mb-6">
             We&apos;re Not Here to Serve Millionaires.
             <span className="block text-primary-green mt-2">We&apos;re Here to Create Them.</span>
           </h1>
@@ -73,7 +73,7 @@ function OurStorySection() {
             </p>
             
             <div className="bg-gradient-to-r from-primary-blue/10 to-primary-green/10 rounded-2xl p-8 my-8">
-              <p className="text-2xl font-heading font-bold text-dark-navy text-center">
+              <p className="text-2xl font-logo font-bold text-dark-navy text-center">
                 We started Built For Life to change that.
               </p>
             </div>
@@ -113,7 +113,7 @@ function MissionSection() {
           viewport={{ once: true }}
           className="text-center max-w-4xl mx-auto"
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-logo font-bold text-white mb-6">
             Restoring the American Dream,
             <span className="block text-primary-green">One Family at a Time</span>
           </h2>
@@ -154,7 +154,7 @@ function VisionSection() {
             viewport={{ once: true }}
           >
             <span className="text-sm font-medium text-primary-green uppercase tracking-wider">Our Vision</span>
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-dark-navy mt-2 mb-6">
+            <h2 className="text-3xl md:text-4xl font-logo font-bold text-dark-navy mt-2 mb-6">
               To Be the Standard Others Compare Themselves To
             </h2>
             
@@ -168,7 +168,7 @@ function VisionSection() {
               We envision a future where every individual, regardless of background or circumstances, can confidently navigate the financial landscape, create lasting prosperity for themselves and their families, and restore the dream of upward mobility for the middle class.
             </p>
             
-            <p className="text-2xl font-heading font-bold text-primary-blue mt-8">
+            <p className="text-2xl font-logo font-bold text-primary-blue mt-8">
               We&apos;re building that future. One family at a time.
             </p>
           </motion.div>
@@ -255,7 +255,7 @@ function ApproachSection() {
                   <div className="flex items-center gap-2 mb-1">
                     <span className="text-sm font-bold text-warm-gray">PILLAR {pillar.number}</span>
                   </div>
-                  <h3 className="text-2xl font-heading font-bold text-dark-navy">{pillar.title}</h3>
+                  <h3 className="text-2xl font-logo font-bold text-dark-navy">{pillar.title}</h3>
                   <p className="text-primary-blue font-medium mb-3">{pillar.subtitle}</p>
                 </div>
               </div>
@@ -510,7 +510,7 @@ function FinalCTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-logo font-bold text-white mb-6">
             Ready to Join 300+ Families Building Wealth the Right Way?
           </h2>
           

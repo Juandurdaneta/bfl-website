@@ -29,7 +29,7 @@ function ServicesHero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-white leading-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-logo font-bold text-white leading-tight mb-6">
             Comprehensive Financial Strategies
             <span className="block text-primary-green mt-2">Built For Your Life</span>
           </h1>
@@ -67,7 +67,7 @@ function IntroSection() {
                 <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center">
                   <span className="text-2xl">🏢</span>
                 </div>
-                <h3 className="text-xl font-heading font-bold text-warm-gray">Most Financial Firms</h3>
+                <h3 className="text-xl font-logo font-bold text-warm-gray">Most Financial Firms</h3>
               </div>
               <p className="text-warm-gray leading-relaxed mb-6">
                 Specialize in <span className="font-semibold">one thing</span>: investments, insurance, or tax preparation. They hand you a piece of the puzzle and call it a plan.
@@ -99,7 +99,7 @@ function IntroSection() {
                 <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
                   <span className="text-2xl">🎯</span>
                 </div>
-                <h3 className="text-xl font-heading font-bold text-white">We Do Something Different</h3>
+                <h3 className="text-xl font-logo font-bold text-white">We Do Something Different</h3>
               </div>
               <p className="text-white/90 leading-relaxed mb-6">
                 We <span className="font-semibold text-primary-green">integrate every aspect</span> of your financial life into one cohesive strategy that works together.
@@ -142,7 +142,7 @@ function IntroSection() {
               backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
             }}
             transition={{ duration: 5, repeat: Infinity }}
-            className="text-3xl md:text-4xl font-heading font-bold bg-gradient-to-r from-primary-blue via-primary-green to-primary-blue bg-[length:200%_auto] bg-clip-text text-transparent"
+            className="text-3xl md:text-4xl font-logo font-bold bg-gradient-to-r from-primary-blue via-primary-green to-primary-blue bg-[length:200%_auto] bg-clip-text text-transparent"
           >
             Because wealth isn&apos;t built in silos. It&apos;s built through systems.
           </motion.p>
@@ -245,7 +245,7 @@ function ServiceDetail({
               <span className="text-sm font-medium text-primary-green uppercase tracking-wider">
                 Service #{number}
               </span>
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-dark-navy mt-1">
+              <h2 className="text-3xl md:text-4xl font-logo font-bold text-dark-navy mt-1">
                 {title}
               </h2>
             </div>
@@ -332,7 +332,7 @@ function ServiceDetail({
           {/* Highlight if any */}
           {highlight && (
             <div className="bg-gradient-to-r from-primary-blue to-primary-green rounded-xl p-6 text-center text-white mb-8">
-              <p className="text-3xl font-heading font-bold mb-1">{highlight.value}</p>
+              <p className="text-3xl font-logo font-bold mb-1">{highlight.value}</p>
               <p className="text-white/80">{highlight.label}</p>
             </div>
           )}
@@ -558,7 +558,7 @@ function FinalCTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-logo font-bold text-white mb-6">
             Ready to Build Financial Freedom For Life?
           </h2>
           <p className="text-xl text-white/80 mb-4">

@@ -61,7 +61,7 @@ export function Logo({ className, showText = true, variant = "dark" }: LogoProps
       
       {showText && (
         <div className="flex flex-col leading-tight">
-          <span className={cn("text-xl font-bold tracking-tight font-heading", textColor)}>
+          <span className={cn("text-xl font-bold tracking-tight font-logo", textColor)}>
             BUILT FOR LIFE
           </span>
           <span className={cn("text-xs font-medium tracking-[0.2em] uppercase", subTextColor)}>
