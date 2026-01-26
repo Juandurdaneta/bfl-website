@@ -64,7 +64,7 @@ function HeroSection() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-lg sm:text-xl text-white/90 mb-8"
             >
-              Get Your FREE Financial Needs Analysis and Discover Exactly Where You&apos;re Leaving Money on the Table
+              Get Your FREE Wealth Strategy Plan and Discover Exactly Where You&apos;re Leaving Money on the Table
               <span className="block text-primary-green font-semibold mt-2">(Valued at $5,000)</span>
             </motion.p>
 
@@ -89,7 +89,7 @@ function HeroSection() {
             >
               <div className="flex items-center gap-2 text-white/80">
                 <CheckCircle className="w-5 h-5 text-primary-green" />
-                <span>4,500+ Families Served</span>
+                <span>4,500+ Clients Served</span>
               </div>
               <div className="flex items-center gap-2 text-white/80">
                 <CheckCircle className="w-5 h-5 text-primary-green" />
@@ -138,18 +138,19 @@ function HeroSection() {
 // Pain Points Section
 function PainPointsSection() {
   const painPoints = [
-    "Despite doing everything right, you still feel like you're living paycheck to paycheck",
-    "One medical emergency, one job loss, one major expense away from financial disaster",
-    "No idea where all your money is actually going",
+    "You just wrote another substantial quarterly estimated tax check and have no idea if you're optimized or leaving hundreds of thousands on the table.",
+    "You have significant wealth concentrated in company stock or business equity, and you're paralyzed between the risk if you hold and the massive tax bill if you diversify.",
+    "Your estate could face substantial tax exposure when you die, but you're not sure what's actually protected.",
+    "You're paying significant fees to financial professionals who send reports but have never once proactively brought you a tax strategy or addressed your actual complexities with real solutions.",
   ];
 
   return (
     <section className="py-20 lg:py-28 bg-dark-navy relative overflow-hidden">
       <div className="absolute inset-0 pattern-bg opacity-50" />
-      
+
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeadline
-          title="You're Doing Everything 'Right.' So Why Does It Still Feel Like You're Just Getting By?"
+          title="You've Built Significant Wealth Through Excellence. Is Your Financial Strategy Operating at the Same Level?"
           light
           centered
         />
@@ -161,7 +162,8 @@ function PainPointsSection() {
           className="max-w-3xl mx-auto text-center mb-12"
         >
           <p className="text-lg text-white/80 leading-relaxed">
-            You&apos;re making good money. You&apos;re maxing out your 401(k) because someone told you that&apos;s what responsible people do. You&apos;ve got life insurance through work. You pay your bills on time. You&apos;re doing everything you&apos;re &ldquo;supposed&rdquo; to do.
+            You&apos;ve accumulated substantial net worth through relentless focus on your career or business.
+            You&apos;re doing everything you&apos;re &ldquo;supposed&rdquo; to do.
           </p>
         </motion.div>
 
@@ -174,7 +176,7 @@ function PainPointsSection() {
           >
             Here&apos;s what keeps you up at 3 AM:
           </motion.h3>
-          
+
           <div className="space-y-4">
             {painPoints.map((point, index) => (
               <motion.div
@@ -374,7 +376,7 @@ function CompanySection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeadline
           title="Built For Life Financial Agency"
-          subtitle="Where Families Access Wealth-Building Strategies Designed for the Ultra Rich"
+          subtitle="Where High-Net-Worth Families Access the Sophisticated Strategies They Deserve"
           centered
         />
 
@@ -385,7 +387,7 @@ function CompanySection() {
           className="p-8 mb-12 max-w-3xl mx-auto text-center"
         >
           <p className="text-lg text-dark-navy leading-relaxed">
-            We&apos;re an <span className="font-semibold text-primary-blue">education-first, technology-enabled</span> financial strategy platform. Our mission is simple: Restore the American Dream for hard-working middle-class families by teaching you the tax-optimized wealth-building strategies typically reserved for the ultra-wealthy.
+            We&apos;re not a traditional wealth management firm. We don&apos;t operate in silos, focusing on investments while ignoring the strategies that actually move the needle: <span className="font-semibold text-primary-blue">tax optimization, estate planning, asset protection, and coordinated execution</span>. We&apos;re a comprehensive wealth strategy firm built specifically for successful executives, business owners, and professionals with substantial net worth. Our mission: Deliver the sophisticated, proactive, coordinated wealth strategies that families at your level need but rarely receive from traditional advisors.
           </p>
         </motion.div>
 
@@ -415,7 +417,7 @@ function CompanySection() {
         {/* Stats Section */}
         <div className="bg-gradient-to-r from-primary-blue to-dark-navy rounded-2xl p-8 md:p-12">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <StatCard value={4500} suffix="+" label="Families Served" light />
+            <StatCard value={4500} suffix="+" label="Clients Served" light />
             <StatCard value={41.6} prefix="$" suffix="M" decimals={1} label="Tax Savings" light />
             <StatCard value={5} suffix="/5" label="Star Rating" light />
             <StatCard value={98} suffix="%" label="Client Retention" light />
@@ -437,17 +439,6 @@ function WhoWeServeSection() {
   const [activeTab, setActiveTab] = useState(0);
 
   const personas = [
-    {
-      title: "The Aspiring Legacy-Builder",
-      icon: Users,
-      points: [
-        "You're making decent money, but feel like you're still just getting by",
-        "Tired of living paycheck to paycheck",
-        "Frustrated with conflicting financial advice from YouTube, Reddit, and relatives",
-        "Want to protect your family from catastrophe and build something lasting",
-        "Ready to stop feeling confused and start feeling confident",
-      ],
-    },
     {
       title: "The Successful Professional",
       icon: Briefcase,
@@ -608,7 +599,7 @@ function TestimonialsSection() {
         {/* Stats Bar */}
         <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <StatCard value={4500} suffix="+" label="Families Served" />
+            <StatCard value={4500} suffix="+" label="Clients Served" />
             <StatCard value={41.6} prefix="$" suffix="M" decimals={1} label="Total Tax Savings" />
             <StatCard value={127} label="Five-Star Reviews" />
             <StatCard value={98} suffix="%" label="Client Retention" />
