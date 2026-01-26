@@ -664,7 +664,7 @@ function ProcessSection() {
     <section className="py-20 lg:py-28 bg-white" id="schedule">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeadline
-          title={<>Here&apos;s What Happens Next: Your FREE<br />Financial Needs Analysis</>}
+          title={<>Here&apos;s What Happens Next: Your<br />Complimentary Wealth Strategy Plan</>}
           centered
         />
 
