@@ -29,14 +29,17 @@ function AboutHero() {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-logo font-bold text-white leading-tight mb-6">
-            We&apos;re Not Here to Serve Millionaires.
-            <span className="block text-primary-green mt-2">We&apos;re Here to Create Them.</span>
+            We Don&apos;t Serve Everyone.
+            <span className="block text-primary-green mt-2">We Serve Families Who&apos;ve Built Real Wealth.</span>
           </h1>
-          <p className="text-xl text-white/80 mb-8 max-w-3xl mx-auto">
-            Built For Life Financial Agency exists to restore the American Dream for middle-class families by teaching the wealth-building strategies Wall Street doesn&apos;t want you to know.
+          <p className="text-xl text-white/80 mb-4 max-w-4xl mx-auto">
+            And Refuse to Watch It Bleed Away to Unnecessary Taxes, Poor Planning, and Mediocre Advice.
+          </p>
+          <p className="text-lg text-white/70 mb-8 max-w-3xl mx-auto">
+            Built For Life Financial exists to deliver the sophisticated wealth strategies, proactive tax optimization, and coordinated planning that high-net-worth families deserve but rarely receive from traditional advisors.
           </p>
           <Button href="#schedule" size="lg" pulse>
-            Schedule My FREE Financial Needs Analysis
+            Schedule My FREE Wealth Strategy Plan
             <ArrowRight className="ml-2 w-5 h-5" />
           </Button>
         </motion.div>
@@ -51,7 +54,7 @@ function OurStorySection() {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeadline
-          title="Our Story"
+          title="Why We Exist"
           centered
         />
 
@@ -63,15 +66,24 @@ function OurStorySection() {
             className="space-y-6 text-lg text-warm-gray leading-relaxed text-center"
           >
             <p>
-              <span className="text-dark-navy font-semibold">The financial services industry has a problem.</span>
+              <span className="text-dark-navy font-semibold">The wealth management industry has a fundamental problem.</span>
             </p>
             <p>
-              It&apos;s designed to serve people who already have money while keeping everyone else confused, dependent, and stuck.
+              It&apos;s designed to manage portfolios for people who already have money while charging premium fees for generic advice that rarely moves the needle on what actually matters: taxes, estate planning, asset protection, and strategic wealth transfer.
             </p>
             <p>
-              Traditional advisors only work with clients who have $500K+ in assets. Insurance agents push products that pay the highest commissions. Banks nickel-and-dime you with fees while paying 0.01% interest on your savings. And &ldquo;conventional wisdom&rdquo; keeps middle-class families locked in a system designed for Wall Street&apos;s profit, not your wealth.
+              Traditional wealth managers focus obsessively on investment returns (which you can&apos;t control) while ignoring tax optimization (which you absolutely can control and which has 3-5x greater impact on wealth accumulation).
             </p>
-            
+            <p>
+              They charge 1% AUM to rebalance portfolios quarterly and send you market commentary emails, while you&apos;re bleeding $200,000-$400,000 annually in unnecessary taxes that could have been legally avoided with proactive planning.
+            </p>
+            <p>
+              CPAs file your returns reactively every April but never implement multi-year tax strategies. Estate attorneys draft documents and disappear for a decade while laws change and your wealth grows. Insurance agents sell you policies without integrating them into comprehensive estate and asset protection plans.
+            </p>
+            <p className="text-dark-navy font-semibold">
+              Nobody coordinates. Nobody proactively brings you strategies. Nobody treats your wealth with the sophistication it deserves.
+            </p>
+
             <div className="bg-gradient-to-r from-primary-blue/10 to-primary-green/10 rounded-2xl p-8 my-8">
               <p className="text-2xl font-logo font-bold text-dark-navy text-center">
                 We started Built For Life to change that.
@@ -79,19 +91,22 @@ function OurStorySection() {
             </div>
 
             <p>
-              We believe financial education and advanced wealth strategies shouldn&apos;t be reserved for people who already have millions. Middle-class families who work hard, play by the rules, and want to build something lasting deserve access to the same tax optimization, asset protection, and cash flow strategies the wealthy use.
-            </p>
-            <p className="text-dark-navy font-semibold">
-              That&apos;s not just our business model. It&apos;s our mission.
+              We believe families who&apos;ve achieved the top 5% through relentless focus and excellence deserve wealth management that operates at the same level. You&apos;ve built something significant. Your financial strategy should reflect that.
             </p>
             <p>
-              We&apos;re not here to manage portfolios for the already-wealthy. We&apos;re here to teach families how to keep more of what they earn, protect what they&apos;ve built, and build financial freedom for life.
+              Advanced tax optimization that saves $100,000-$300,000+ annually. Sophisticated estate planning that eliminates $2 million-$8 million in unnecessary estate taxes. Asset protection structures that shield $10 million-$25 million from creditors, lawsuits, and catastrophic loss. Strategic insurance design that creates tax-free wealth transfer and liquidity.
+            </p>
+            <p className="text-dark-navy font-semibold">
+              Not portfolio management disguised as comprehensive planning. Not reactive tax filing disguised as tax strategy. Not generic advice pulled from a drawer.
+            </p>
+            <p className="text-primary-blue font-semibold text-xl">
+              Real strategy. Real coordination. Real results.
             </p>
           </motion.div>
 
           <div className="text-center mt-12">
             <Button href="#schedule" size="lg">
-              Schedule My FREE Financial Needs Analysis
+              Schedule My FREE Wealth Strategy Plan
             </Button>
           </div>
         </div>
@@ -105,7 +120,7 @@ function MissionSection() {
   return (
     <section className="py-20 bg-dark-navy relative overflow-hidden">
       <div className="absolute inset-0 pattern-bg opacity-30" />
-      
+
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -114,18 +129,41 @@ function MissionSection() {
           className="text-center max-w-4xl mx-auto"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-logo font-bold text-white mb-6">
-            Restoring the American Dream,
-            <span className="block text-primary-green">One Family at a Time</span>
+            Protecting Wealth, Creating Legacies,
+            <span className="block text-primary-green">Delivering Excellence</span>
           </h2>
-          
-          <p className="text-lg text-white/80 leading-relaxed mb-8">
-            The American Dream used to be simple: work hard, provide for your family, own a home, send your kids to college, retire with dignity, and leave something behind.
+
+          <p className="text-lg text-white/80 leading-relaxed mb-6">
+            The financial challenge facing high-net-worth families today isn&apos;t investment returns. With low-cost index funds and robo-advisors, anyone can achieve market returns.
           </p>
-          <p className="text-lg text-white/80 leading-relaxed mb-8">
-            For too many families today, that dream feels impossible. Not because they&apos;re not working hard enough, but because the system and rules have changed. And nobody is teaching regular families how to navigate the new reality.
+          <p className="text-lg text-white/80 leading-relaxed mb-6">
+            The real challenge is wealth preservation in a system designed to erode it through taxes, poor planning, and preventable losses.
           </p>
+
+          <div className="grid md:grid-cols-2 gap-4 mb-8 text-left">
+            {[
+              "Estate tax rates of 40% on wealth over $13.9 million.",
+              "Income tax rates approaching 50% when combining federal, state, and investment taxes.",
+              "Concentrated stock positions creating catastrophic risk.",
+              "Business exits structured poorly, losing millions to avoidable taxes.",
+              "Assets completely exposed to lawsuits, creditors, and claims with zero protection.",
+            ].map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, x: -10 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="flex items-start gap-3 text-white/80"
+              >
+                <span className="text-primary-green">•</span>
+                <span>{item}</span>
+              </motion.div>
+            ))}
+          </div>
+
           <p className="text-xl text-white font-semibold mb-8">
-            Our mission is to change that.
+            These aren&apos;t investment problems. These are strategy problems. Our mission is to solve them.
           </p>
 
           <motion.div
@@ -139,11 +177,9 @@ function MissionSection() {
             transition={{ duration: 3, repeat: Infinity }}
             className="relative overflow-hidden rounded-2xl"
           >
-            {/* Animated gradient border */}
             <div className="absolute inset-0 bg-gradient-to-r from-primary-green via-primary-blue to-primary-green bg-[length:200%_100%] animate-gradient rounded-2xl" />
 
             <div className="relative m-[2px] bg-dark-navy/90 backdrop-blur-sm rounded-2xl p-8">
-              {/* Floating particles effect */}
               <div className="absolute inset-0 overflow-hidden rounded-2xl">
                 <motion.div
                   animate={{ y: [-20, 20], x: [-10, 10] }}
@@ -155,16 +191,11 @@ function MissionSection() {
                   transition={{ duration: 5, repeat: Infinity, repeatType: "reverse" }}
                   className="absolute bottom-6 right-12 w-3 h-3 bg-primary-blue/30 rounded-full"
                 />
-                <motion.div
-                  animate={{ y: [-15, 15] }}
-                  transition={{ duration: 3.5, repeat: Infinity, repeatType: "reverse" }}
-                  className="absolute top-1/2 right-8 w-2 h-2 bg-primary-green/20 rounded-full"
-                />
               </div>
 
               <div className="relative">
                 <p className="text-white text-lg leading-relaxed mb-6">
-                  We are committed to guide you through the complex world of finance, arming you with the wisdom to shape your destiny and build your future.
+                  We exist to deliver sophisticated, coordinated wealth strategies that integrate tax optimization, estate planning, asset protection, and insurance design into one cohesive system where every piece works together to preserve and grow what you&apos;ve built.
                 </p>
                 <motion.p
                   animate={{
@@ -173,11 +204,17 @@ function MissionSection() {
                   transition={{ duration: 5, repeat: Infinity }}
                   className="text-xl md:text-2xl font-bold bg-gradient-to-r from-primary-green via-white to-primary-green bg-[length:200%_auto] bg-clip-text text-transparent"
                 >
-                  Together, we&apos;ll rewrite the narrative of the American Dream, restoring its promise and ensuring that prosperity is not just a dream, but a reality for all.
+                  We&apos;re here to save you $100,000-$500,000+ annually, protect your money from estate taxes and creditors, optimize business exits, and create legacies that last for generations.
                 </motion.p>
               </div>
             </div>
           </motion.div>
+
+          <div className="text-center mt-12">
+            <Button href="#schedule" size="lg">
+              Schedule My FREE Wealth Strategy Plan
+            </Button>
+          </div>
         </motion.div>
       </div>
     </section>
@@ -197,19 +234,25 @@ function VisionSection() {
           >
             <span className="text-sm font-medium text-primary-green uppercase tracking-wider">Our Vision</span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-logo font-bold text-dark-navy mt-2 mb-6">
-              To Be the Standard Others Compare Themselves To
+              To Redefine What High-Net-Worth Families Should Expect From Their Advisors
             </h2>
-            
-            <p className="text-lg text-warm-gray leading-relaxed mb-3">
-              Our vision is bold: To be the number one company in the world that everyone in financial services compares themselves to.
+
+            <p className="text-lg text-warm-gray leading-relaxed mb-4">
+              Our vision is bold but simple: To become the standard that every company compares themselves to.
             </p>
-            <p className="text-lg text-warm-gray leading-relaxed mb-3">
-              We&apos;ve proven that education-first, mission-driven financial guidance can transform lives at scale.
+            <p className="text-lg text-warm-gray leading-relaxed mb-4">
+              Not through size or assets under management, but through results.
+            </p>
+            <p className="text-lg text-warm-gray leading-relaxed mb-4">
+              When a successful executive, business owner, or professional asks, &ldquo;What should I expect from my wealth advisor?&rdquo;, the answer should be: The level of sophistication, coordination, and proactive guidance that Built For Life delivers.
+            </p>
+            <p className="text-lg text-warm-gray leading-relaxed mb-4">
+              We envision a future where high-net-worth families no longer tolerate fragmented advice, reactive planning, and generic strategies that ignore their complexity.
             </p>
             <p className="text-lg text-warm-gray leading-relaxed">
-              We envision a future where every individual, regardless of background or circumstances, can confidently navigate the financial landscape, create lasting prosperity for themselves and their families, and restore the dream of upward mobility for the middle class.
+              Where paying $10,000+ annually to financial professionals actually delivers measurable ROI through tax savings, estate tax elimination, and coordinated execution. Where advisors act as true partners who bring strategies to clients proactively, respect their intelligence and time, and deliver family-office-caliber service without requiring $25M+ minimums.
             </p>
-            
+
             <p className="text-2xl font-logo font-bold text-primary-blue mt-8">
               We&apos;re building that future. One family at a time.
             </p>
@@ -226,33 +269,33 @@ function ApproachSection() {
     {
       icon: GraduationCap,
       number: 1,
-      title: "EDUCATE",
-      subtitle: "Build understanding before decisions",
-      description: "We start by teaching you how money actually works. Clear, simple education about how taxes impact your wealth, the difference between products and strategies, what wealthy families do differently, and how to evaluate financial advice.",
+      title: "COMPREHENSIVE STRATEGY DEVELOPMENT",
+      subtitle: "We start by understanding your complete financial picture",
+      description: "Your income structure (W-2, bonus, equity compensation, business distributions, real estate income). Your assets (concentrated stock positions, business equity, real estate holdings, retirement accounts). Your liabilities and risks. Your goals (retirement timeline, business exit plans, legacy intentions, philanthropic vision). Then we design a comprehensive wealth strategy that integrates tax optimization, estate planning, asset protection, insurance design, and investment coordination into one cohesive system.",
       color: "from-blue-500 to-blue-600",
     },
     {
       icon: Target,
       number: 2,
-      title: "STRATEGIZE",
-      subtitle: "Design solutions aligned with long-term goals",
-      description: "Once you understand the landscape, we build your custom strategy. A comprehensive financial system designed around YOUR life: your income structure, tax situation, family obligations, risk tolerance, timeline, and goals.",
+      title: "PROACTIVE COORDINATION",
+      subtitle: "We act as your wealth strategist, integrating your entire advisory team",
+      description: "Your CPA files taxes but rarely implements proactive multi-year strategies. Your estate attorney drafted documents years ago but hasn't reviewed them since laws changed. We bring everything together. We coordinate with your CPA on tax projections and planning opportunities. We work with your estate attorney to ensure trusts, asset titling, and beneficiary designations align. We design insurance structures that serve multiple purposes.",
       color: "from-green-500 to-green-600",
     },
     {
       icon: Cog,
       number: 3,
-      title: "IMPLEMENT",
-      subtitle: "Deploy with discipline and structure",
-      description: "A plan is worthless if it sits in a drawer. We guide you through implementation: opening accounts, restructuring insurance, coordinating with your CPA and attorney, setting up automated systems, documenting everything.",
+      title: "DISCIPLINED IMPLEMENTATION",
+      subtitle: "Strategy without execution is worthless",
+      description: "We don't hand you a plan and wish you luck. We guide you through implementation step by step: Setting up trusts and legal entities. Executing Roth conversions. Implementing captive insurance or premium-financed life insurance structures. Establishing asset protection LLCs and domestic asset protection trusts. Creating systematic diversification plans for concentrated stock positions. You make the strategic decisions. We handle the operational execution.",
       color: "from-purple-500 to-purple-600",
     },
     {
       icon: RefreshCw,
       number: 4,
-      title: "OPTIMIZE",
-      subtitle: "Refine over time as life evolves",
-      description: "Your life changes. Markets change. Tax laws change. We conduct ongoing reviews: quarterly check-ins, annual strategy sessions, continuous monitoring, and proactive adjustments. This isn't a one-time transaction—it's a long-term partnership.",
+      title: "ONGOING OPTIMIZATION",
+      subtitle: "Wealth strategy isn't set-it-and-forget-it",
+      description: "Tax laws change. Estate exemptions sunset. Business valuations fluctuate. Family circumstances evolve. Market conditions shift. We conduct ongoing reviews: Quarterly check-ins (progress tracking, new opportunities, course corrections). Annual comprehensive reviews (major strategy updates, tax law changes, estate planning adjustments). Proactive outreach when opportunities arise. We bring strategies TO you.",
       color: "from-orange-500 to-orange-600",
     },
   ];
@@ -261,8 +304,8 @@ function ApproachSection() {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeadline
-          title="Our Approach"
-          subtitle="Education, Strategy, Execution, Optimization"
+          title="How We Deliver Results"
+          subtitle="Strategy, Coordination, Execution, Optimization"
           centered
         />
 
@@ -273,7 +316,7 @@ function ApproachSection() {
           className="max-w-3xl mx-auto text-center mb-12"
         >
           <p className="text-lg text-warm-gray">
-            Most financial firms follow a simple playbook: Sell you a product, collect a commission or fee, and move on to the next client. <span className="text-dark-navy font-semibold">We don&apos;t do that.</span>
+            Most wealth management firms follow a predictable playbook: Gather your assets, build a portfolio, rebalance quarterly, send reports, collect 1% annually. <span className="text-dark-navy font-semibold">That&apos;s not wealth management. That&apos;s portfolio babysitting. Our approach is fundamentally different.</span>
           </p>
         </motion.div>
 
@@ -288,7 +331,7 @@ function ApproachSection() {
               className="bg-light-gray rounded-2xl p-8 relative overflow-hidden"
             >
               <div className={`absolute top-0 left-0 w-2 h-full bg-gradient-to-b ${pillar.color}`} />
-              
+
               <div className="flex items-start gap-4">
                 <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${pillar.color} flex items-center justify-center flex-shrink-0`}>
                   <pillar.icon className="w-7 h-7 text-white" />
@@ -297,12 +340,12 @@ function ApproachSection() {
                   <div className="flex items-center gap-2 mb-1">
                     <span className="text-sm font-bold text-warm-gray">PILLAR {pillar.number}</span>
                   </div>
-                  <h3 className="text-2xl font-logo font-bold text-dark-navy">{pillar.title}</h3>
-                  <p className="text-primary-blue font-medium mb-3">{pillar.subtitle}</p>
+                  <h3 className="text-xl font-logo font-bold text-dark-navy">{pillar.title}</h3>
+                  <p className="text-primary-blue font-medium mb-3 text-sm">{pillar.subtitle}</p>
                 </div>
               </div>
-              
-              <p className="text-warm-gray leading-relaxed mt-4 ml-18">
+
+              <p className="text-warm-gray leading-relaxed mt-4 text-sm">
                 {pillar.description}
               </p>
             </motion.div>
@@ -311,7 +354,7 @@ function ApproachSection() {
 
         <div className="text-center mt-12">
           <Button href="#schedule" size="lg">
-            Schedule My FREE Financial Needs Analysis
+            Schedule My FREE Wealth Strategy Plan
           </Button>
         </div>
       </div>
@@ -323,24 +366,28 @@ function ApproachSection() {
 function ValuesSection() {
   const values = [
     {
-      title: "Education Over Sales",
-      description: "We believe informed clients make better decisions. We'll never pressure you into something you don't understand.",
+      title: "Sophistication Over Simplicity",
+      description: "We explain complex strategies clearly so you can make informed decisions, but we never sacrifice sophistication for ease. Your wealth requires advanced planning. We deliver it.",
     },
     {
-      title: "Integrity Over Commissions",
-      description: "We recommend strategies because they serve you, not because they pay us the most.",
+      title: "Client First, Always",
+      description: "In our relentless pursuit of becoming the #1 company in the world that everyone compares themselves to, we go above and beyond to put you first. We earn trust through results, not schmoozing.",
     },
     {
-      title: "Transparency Over Jargon",
-      description: "We speak plain English. We show you the numbers. No hidden fees. No fine print surprises.",
+      title: "Proactivity Over Reactivity",
+      description: "Most advisors wait for you to ask questions. We bring you strategies before you know you need them. Estate exemption sunsetting in 2026? We're reaching out in 2024 with a gifting plan.",
     },
     {
-      title: "Partnership Over Patronization",
-      description: "You're not a transaction. You're a partner. We respect your time, your questions, and your right to make informed decisions.",
+      title: "Coordination Over Fragmentation",
+      description: "Your financial life is interconnected. Your tax strategy affects your estate plan, your insurance design impacts your asset protection. We coordinate everything so it works together seamlessly.",
     },
     {
-      title: "Mission Over Profit",
-      description: "We're building something bigger than a business. We're restoring the American Dream for families who've been left behind.",
+      title: "Time Respect Over Busy Work",
+      description: "Your time is worth money. We structure our process to maximize strategic decision-making and minimize administrative burden (which we handle). Meetings are efficient, communications are executive-level concise.",
+    },
+    {
+      title: "Transparency Over Opacity",
+      description: "We show you exactly how we're compensated, what strategies cost to implement, what the trade-offs are, and what results you should expect. No hidden fees. No surprises.",
     },
   ];
 
@@ -366,9 +413,15 @@ function ValuesSection() {
                 <Heart className="w-5 h-5 text-primary-blue" />
               </div>
               <h3 className="text-xl font-semibold text-dark-navy mb-2">{value.title}</h3>
-              <p className="text-warm-gray">{value.description}</p>
+              <p className="text-warm-gray text-sm">{value.description}</p>
             </motion.div>
           ))}
+        </div>
+
+        <div className="text-center mt-12">
+          <Button href="#schedule" size="lg">
+            Schedule My FREE Wealth Strategy Plan
+          </Button>
         </div>
       </div>
     </section>
@@ -388,11 +441,11 @@ function ImpactSection() {
   return (
     <section className="py-20 bg-dark-navy relative overflow-hidden">
       <div className="absolute inset-0 pattern-bg opacity-30" />
-      
+
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeadline
           title="Building Wealth, Changing Lives"
-          subtitle="Over 300 families in the DMV area trust us with their financial futures. Here's the impact we've made together:"
+          subtitle="Over 4,500 families across America trust us with their financial futures. Here's the impact we've made together:"
           centered
           light
         />
@@ -421,12 +474,18 @@ function ImpactSection() {
             But the numbers don&apos;t tell the whole story.
           </p>
           <p className="text-white text-lg leading-relaxed">
-            The real impact is in the families who now sleep peacefully knowing they&apos;re protected. The parents who can say &ldquo;yes&rdquo; to their kids&apos; opportunities without financial stress. The couples who stopped fighting about money and started building together. The clients who look at retirement with confidence instead of fear.
+            The real impact is in the executives who&apos;ve eliminated millions in estate tax exposure and know their legacy is secure. The business owners who exited and can retire on their terms. The professionals who&apos;ve recaptured hundreds of thousands annually in tax savings and watch that compound into millions over their remaining working years.
           </p>
           <p className="text-primary-green text-xl font-semibold mt-6">
             That&apos;s what drives us. That&apos;s why we do this work.
           </p>
         </motion.div>
+
+        <div className="text-center mt-12">
+          <Button href="#schedule" size="lg">
+            Schedule My FREE Wealth Strategy Plan
+          </Button>
+        </div>
       </div>
     </section>
   );
@@ -488,7 +547,7 @@ function TestimonialsSection() {
 
         <div className="text-center mt-12">
           <Button href="#schedule" size="lg">
-            Schedule My FREE Financial Needs Analysis
+            Schedule My FREE Wealth Strategy Plan
           </Button>
         </div>
       </div>
@@ -515,29 +574,33 @@ function FinalCTA() {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-logo font-bold text-white mb-6">
-            Ready to Join 300+ Families Building Wealth the Right Way?
+            Ready to Join 5,000 Building Their Life The Right Way?
           </h2>
-          
+
           <p className="text-lg text-white/80 mb-4">
             If you&apos;ve read this far, you already know something needs to change.
           </p>
           <p className="text-lg text-white/80 mb-8">
-            You&apos;re tired of feeling stuck. Tired of conflicting advice, paying too much in taxes, and wondering if you&apos;re making the right financial decisions. You want clarity and a clear action plan. You want someone in your corner who actually cares about your success.
+            You&apos;re tired of feeling stuck. Tired of conflicting advice, paying too much in taxes and wondering if you&apos;re making the right financial decisions. You want clarity and a clear action plan. You want someone in your corner who actually cares about your success.
           </p>
-          
+
           <p className="text-xl text-primary-green font-semibold mb-8">
             That&apos;s what we do. That&apos;s who we are.
           </p>
 
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 mb-8 inline-block">
             <p className="text-white">
-              Schedule your <span className="font-bold">FREE Financial Needs Analysis</span> today. We&apos;ll show you exactly where you&apos;re leaving money on the table and give you a clear roadmap to fix it.
+              Schedule your complimentary <span className="font-bold">Wealth Strategy Plan</span> today. We&apos;ll show you exactly where you&apos;re leaving money on the table and give you a clear roadmap to fix it.
             </p>
           </div>
 
+          <p className="text-white/70 mb-6">
+            Just honest guidance from people who believe you deserve better.
+          </p>
+
           <div className="mb-4">
             <Button href="#schedule" size="lg" pulse>
-              Schedule My FREE Financial Needs Analysis
+              Schedule My FREE Wealth Strategy Plan
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
           </div>

@@ -64,7 +64,7 @@ function HeroSection() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-lg sm:text-xl text-white/90 mb-8"
             >
-              Get Your FREE Wealth Strategy Plan and Discover Exactly Where You&apos;re Leaving Money on the Table
+              Get Your FREE Financial Needs Analysis and Discover Exactly Where You&apos;re Leaving Money on the Table
               <span className="block text-primary-green font-semibold mt-2">(Valued at $5,000)</span>
             </motion.p>
 
