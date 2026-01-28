@@ -2,7 +2,7 @@
 
 import { Logo } from "@/components/ui/Logo";
 import { Button } from "@/components/ui/Button";
-import { Facebook, Instagram, Linkedin, Twitter, Mail, Phone, MapPin } from "lucide-react";
+import { Facebook, Linkedin, Mail, Phone, MapPin } from "lucide-react";
 import Link from "next/link";
 
 const footerLinks = {
@@ -25,10 +25,8 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { icon: Facebook, href: "#", label: "Facebook" },
-  { icon: Instagram, href: "#", label: "Instagram" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Twitter, href: "#", label: "Twitter" },
+  { icon: Linkedin, href: "https://www.linkedin.com/company/built-for-life-financial-agency-insurance-financial-policy/", label: "LinkedIn" },
+  { icon: Facebook, href: "https://www.facebook.com/BuiltForLifeFinancial/", label: "Facebook" },
 ];
 
 export function Footer() {
