@@ -211,7 +211,7 @@ function ProblemSection() {
     {
       icon: FileText,
       title: "The Tax Code Complexity",
-      description: "Written by and for the wealthy, with loopholes kept deliberately complex so middle-class families never learn them.",
+      description: "Written by and for the wealthy, with loopholes kept deliberately complex so middle-class individuals never learn them.",
     },
     {
       icon: AlertTriangle,
@@ -284,31 +284,31 @@ function WealthyStrategiesSection() {
       icon: Landmark,
       title: "Strategy #1: They Become Their Own Bank (Infinite Banking)",
       description: "You put money in a savings account earning 0.5% interest. Then you turn around and pay a bank 7% interest on a car loan.",
-      expanded: "Wealthy families use properly structured life insurance policies to create their own banking system. They store wealth in tax-advantaged vehicles, borrow against it tax-free when opportunities arise, and never ask permission from a bank or the IRS to access their own capital. Same dollars. Completely different outcomes.",
+      expanded: "Wealthy individuals use properly structured life insurance policies to create their own banking system. They store wealth in tax-advantaged vehicles, borrow against it tax-free when opportunities arise, and never ask permission from a bank or the IRS to access their own capital. Same dollars. Completely different outcomes.",
     },
     {
       icon: Calculator,
       title: "Strategy #2: They Optimize for Taxes FIRST",
       description: "You've been taught to chase investment returns. Beat the market. Find the hot stock. Meanwhile, you're losing 30-40% of your gains to taxes every year.",
-      expanded: "Wealthy families focus on keeping what they make. Tax-loss harvesting. Roth conversions. Strategic charitable giving. Cash value life insurance. 1031 exchanges. Strategies that save 15-20% on their effective tax rate. Saving 15% in taxes beats chasing an extra 2% in returns every single time.",
+      expanded: "Wealthy individuals focus on keeping what they make. Tax-loss harvesting. Roth conversions. Strategic charitable giving. Cash value life insurance. 1031 exchanges. Strategies that save 15-20% on their effective tax rate. Saving 15% in taxes beats chasing an extra 2% in returns every single time.",
     },
     {
       icon: Wallet,
       title: "Strategy #3: They Prioritize Liquidity and Control",
       description: "You've been told to lock everything in a 401(k) until you're 59½. Can't touch it without penalties. Can't use it for opportunities.",
-      expanded: "Wealthy families keep capital accessible. When a real estate deal pops up, they have cash. When markets crash, they buy. When their kid needs college tuition, they don't beg the IRS for penalty-free withdrawals. Trapped money isn't wealth. It's a future promise that might not materialize.",
+      expanded: "Wealthy individuals keep capital accessible. When a real estate deal pops up, they have cash. When markets crash, they buy. When their kid needs college tuition, they don't beg the IRS for penalty-free withdrawals. Trapped money isn't wealth. It's a future promise that might not materialize.",
     },
     {
       icon: Shield,
       title: "Strategy #4: They Use Insurance as a Wealth-Building Tool",
       description: "You bought term life insurance because someone said 'buy term and invest the difference.'",
-      expanded: "Wealthy families use permanent insurance (designed correctly) as a tax-free growth vehicle, estate planning tool, asset protection strategy, and liquidity source. Same product category. Completely different application.",
+      expanded: "Wealthy individuals use permanent insurance (designed correctly) as a tax-free growth vehicle, estate planning tool, asset protection strategy, and liquidity source. Same product category. Completely different application.",
     },
     {
       icon: Target,
       title: "Strategy #5: They Coordinate Everything",
       description: "Your 401(k) doesn't talk to your life insurance. Your CPA files taxes but doesn't build a proactive strategy.",
-      expanded: "Wealthy families integrate everything: tax strategy, asset protection, cash flow optimization, insurance, investments, and estate planning. Every piece works together. The strategies are there. You've just never had someone willing to teach you.",
+      expanded: "Wealthy individuals integrate everything: tax strategy, asset protection, cash flow optimization, insurance, investments, and estate planning. Every piece works together. The strategies are there. You've just never had someone willing to teach you.",
     },
   ];
 
@@ -364,7 +364,7 @@ function CompanySection() {
     {
       icon: Users,
       title: "We're Mission-Driven",
-      description: "Financial education shouldn't be reserved for people who already have money. Hard-working families deserve the same strategies the wealthy use.",
+      description: "Financial education shouldn't be reserved for people who already have money. Hard-working individuals deserve the same strategies the wealthy use.",
     },
   ];
 
@@ -384,7 +384,7 @@ function CompanySection() {
           className="p-8 mb-12 max-w-3xl mx-auto text-center"
         >
           <p className="text-lg text-dark-navy leading-relaxed">
-            We&apos;re not a traditional wealth management firm. We don&apos;t operate in silos, focusing on investments while ignoring the strategies that actually move the needle: <span className="font-semibold text-primary-blue">tax optimization, estate planning, asset protection, and coordinated execution</span>. We&apos;re a comprehensive wealth strategy firm built specifically for successful executives, business owners, and professionals with substantial net worth. Our mission: Deliver the sophisticated, proactive, coordinated wealth strategies that families at your level need but rarely receive from traditional advisors.
+            We&apos;re not a traditional wealth management firm. We don&apos;t operate in silos, focusing on investments while ignoring the strategies that actually move the needle: <span className="font-semibold text-primary-blue">tax optimization, estate planning, asset protection, and coordinated execution</span>. We&apos;re a comprehensive wealth strategy firm built specifically for successful executives, business owners, and professionals with substantial net worth. Our mission: Deliver the sophisticated, proactive, coordinated wealth strategies that individuals at your level need but rarely receive from traditional advisors.
           </p>
         </motion.div>
 
@@ -465,7 +465,7 @@ function WhoWeServeSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeadline
           title="Is Built For Life Right for You?"
-          subtitle="We work with families, individuals, and business owners across the country"
+          subtitle="We work with individuals and business owners across the country"
           centered
         />
 
@@ -772,7 +772,7 @@ function FAQSection() {
   const faqs = [
     {
       question: "Do I need to be wealthy to work with you?",
-      answer: "No. We work with families earning $50K+. If you're ready to build wealth, we're ready to help.",
+      answer: "No. We work with individuals earning $50K+. If you're ready to build wealth, we're ready to help.",
     },
     {
       question: "How is this different from other financial advisors?",
