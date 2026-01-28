@@ -356,7 +356,7 @@ const services: ServiceDetailProps[] = [
     icon: Shield,
     number: 1,
     title: "Wealth Protection & Insurance Planning",
-    problem: "If you die tomorrow, does that policy actually replace your income for 20+ years? Does it cover the mortgage, college costs, and your spouse's retirement? Most families are either drastically under-insured, paying for coverage they don't need, or have the wrong structure entirely.",
+    problem: "If you die tomorrow, does that policy actually replace your income for 20+ years? Does it cover the mortgage, college costs, and your spouse's retirement? Most individuals are either drastically under-insured, paying for coverage they don't need, or have the wrong structure entirely.",
     approach: [
       "Comprehensive insurance needs analysis based on your actual financial picture",
       "Income replacement calculation (how much your family needs to maintain their lifestyle)",
@@ -377,7 +377,7 @@ const services: ServiceDetailProps[] = [
     icon: Calculator,
     number: 2,
     title: "Tax-Advantaged Wealth Strategies",
-    problem: "Your CPA files your taxes every April. They tell you what you owe. But they're not building proactive strategies to reduce that burden year after year. Meanwhile, wealthy families pay lower effective rates using strategies you've never even heard of.",
+    problem: "Your CPA files your taxes every April. They tell you what you owe. But they're not building proactive strategies to reduce that burden year after year. Meanwhile, wealthy individuals pay lower effective rates using strategies you've never even heard of.",
     approach: [
       "We don't file your taxes (that's your CPA's job)",
       "We coordinate with them to implement proactive, legal tax reduction strategies",

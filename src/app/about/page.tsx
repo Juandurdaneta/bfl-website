@@ -91,7 +91,7 @@ function OurStorySection() {
             </div>
 
             <p>
-              We believe families who&apos;ve achieved the top 5% through relentless focus and excellence deserve wealth management that operates at the same level. You&apos;ve built something significant. Your financial strategy should reflect that.
+              We believe those who&apos;ve achieved the top 5% through relentless focus and excellence deserve wealth management that operates at the same level. You&apos;ve built something significant. Your financial strategy should reflect that.
             </p>
             <p>
               Advanced tax optimization that saves $100,000-$300,000+ annually. Sophisticated estate planning that eliminates $2 million-$8 million in unnecessary estate taxes. Asset protection structures that shield $10 million-$25 million from creditors, lawsuits, and catastrophic loss. Strategic insurance design that creates tax-free wealth transfer and liquidity.
@@ -134,7 +134,7 @@ function MissionSection() {
           </h2>
 
           <p className="text-lg text-white/80 leading-relaxed mb-6">
-            The financial challenge facing high-net-worth families today isn&apos;t investment returns. With low-cost index funds and robo-advisors, anyone can achieve market returns.
+            The financial challenge facing high-net-worth individuals today isn&apos;t investment returns. With low-cost index funds and robo-advisors, anyone can achieve market returns.
           </p>
           <p className="text-lg text-white/80 leading-relaxed mb-6">
             The real challenge is wealth preservation in a system designed to erode it through taxes, poor planning, and preventable losses.
@@ -234,7 +234,7 @@ function VisionSection() {
           >
             <span className="text-sm font-medium text-primary-green uppercase tracking-wider">Our Vision</span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-logo font-bold text-dark-navy mt-2 mb-6">
-              To Redefine What High-Net-Worth Families Should Expect From Their Advisors
+              To Redefine What High-Net-Worth Individuals Should Expect From Their Advisors
             </h2>
 
             <p className="text-lg text-warm-gray leading-relaxed mb-4">
@@ -247,7 +247,7 @@ function VisionSection() {
               When a successful executive, business owner, or professional asks, &ldquo;What should I expect from my wealth advisor?&rdquo;, the answer should be: The level of sophistication, coordination, and proactive guidance that Built For Life delivers.
             </p>
             <p className="text-lg text-warm-gray leading-relaxed mb-4">
-              We envision a future where high-net-worth families no longer tolerate fragmented advice, reactive planning, and generic strategies that ignore their complexity.
+              We envision a future where high-net-worth individuals no longer tolerate fragmented advice, reactive planning, and generic strategies that ignore their complexity.
             </p>
             <p className="text-lg text-warm-gray leading-relaxed">
               Where paying $10,000+ annually to financial professionals actually delivers measurable ROI through tax savings, estate tax elimination, and coordinated execution. Where advisors act as true partners who bring strategies to clients proactively, respect their intelligence and time, and deliver family-office-caliber service without requiring $25M+ minimums.
@@ -279,7 +279,7 @@ function ApproachSection() {
       number: 2,
       title: "Proactive Coordination",
       subtitle: "We act as your wealth strategist, integrating your entire advisory team",
-      description: "Your CPA files taxes but rarely implements proactive multi-year strategies. Your estate attorney drafted documents years ago but hasn't reviewed them since laws changed. We bring everything together. We coordinate with your CPA on tax projections and planning opportunities. We work with your estate attorney to ensure trusts, asset titling, and beneficiary designations align. We design insurance structures that serve multiple purposes.",
+      description: "Your CPA files taxes but rarely implements proactive multi-year strategies. Your estate attorney drafted documents years ago but hasn't reviewed them since laws changed. We bring everything together.",
       color: "from-green-500 to-green-600",
     },
     {
@@ -445,7 +445,7 @@ function ImpactSection() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeadline
           title="Building Wealth, Changing Lives"
-          subtitle="Over 4,500 families across America trust us with their financial futures. Here's the impact we've made together:"
+          subtitle="Over 4,500 individuals across America trust us with their financial futures. Here's the impact we've made together:"
           centered
           light
         />
