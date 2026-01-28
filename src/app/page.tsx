@@ -729,7 +729,7 @@ function FinalCTASection() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-logo font-bold text-white mb-6">
-            Stop Leaving Money on the Table. Start Building the Future Your Family Deserves.
+            Stop Leaving Money on the Table. Start Building the Future You Deserve.
           </h2>
           <p className="text-xl text-white/80 mb-4">
             Every month you wait is another month of unnecessary losses. Another month of opportunity cost.

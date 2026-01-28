@@ -574,7 +574,7 @@ function FinalCTA() {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-logo font-bold text-white mb-6">
-            Ready to Join 5,000 Building Their Life The Right Way?
+            Ready to Join 5,000+ Building Their Life The Right Way?
           </h2>
 
           <p className="text-lg text-white/80 mb-4">
@@ -585,7 +585,7 @@ function FinalCTA() {
           </p>
 
           <p className="text-xl text-primary-green font-semibold mb-8">
-            That&apos;s what we do. That&apos;s who we are.
+            That&apos;s what we do. <span className="whitespace-nowrap">That&apos;s who we are.</span>
           </p>
 
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 mb-8 inline-block">
@@ -606,7 +606,7 @@ function FinalCTA() {
           </div>
 
           <p className="text-white/60 text-sm">
-            Limited to 12 new families per month. Schedule now before spots fill.
+            Limited to 12 new clients per month. Schedule now before spots fill.
           </p>
         </motion.div>
       </div>
