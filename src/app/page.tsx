@@ -51,7 +51,7 @@ function HeroSection() {
             >
               <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-4xl font-logo font-bold text-white leading-tight mb-6 tracking-wide">
                 A Clear Financial Strategy That{" "}
-                <span className="text-primary-green">Protects Your Family</span>, Optimizes Your Taxes, and Builds Lasting Wealth
+                <span className="text-primary-green">Protects You</span>, Optimizes Your Taxes, and Builds Lasting Wealth
               </h1>
             </motion.div>
 
@@ -316,8 +316,8 @@ function WealthyStrategiesSection() {
     <section className="py-20 lg:py-28 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeadline
-          title="What Wealthy Families Know (That Wall Street Doesn't Want You to Learn)"
-          subtitle="Wealthy families don't just 'invest more' or 'work harder.' They use completely different strategies that most middle-class families have never even heard of."
+          title="What The Wealthy Know"
+          subtitle="The Wealthy don't just 'invest more' or 'work harder.' They use completely different strategies that most people have never even heard of."
           centered
         />
 
@@ -373,7 +373,7 @@ function CompanySection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeadline
           title="Built For Life Financial Agency"
-          subtitle="Where High-Net-Worth Families Access the Sophisticated Strategies They Deserve"
+          subtitle="Where High-Net-Worth Individuals Access the Sophisticated Strategies They Deserve"
           centered
         />
 
@@ -578,7 +578,7 @@ function TestimonialsSection() {
     <section className="py-20 lg:py-28 bg-light-gray">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeadline
-          title="Real Families. Real Results."
+          title="Real People. Real Results."
           centered
         />
 
@@ -735,7 +735,7 @@ function FinalCTASection() {
             Every month you wait is another month of unnecessary losses. Another month of opportunity cost.
           </p>
           <p className="text-lg text-white/70 mb-8">
-            The best time to fix your financial strategy was five years ago. <span className="text-primary-green font-semibold">The second-best time is right now.</span>
+            The best time to fix your financial strategy was five years ago. <span className="text-primary-green font-semibold whitespace-nowrap">The second-best time is right now.</span>
           </p>
 
           <div className="mb-8">

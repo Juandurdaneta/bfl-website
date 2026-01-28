@@ -30,13 +30,13 @@ function AboutHero() {
         >
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-logo font-bold text-white leading-tight mb-6">
             We Don&apos;t Serve Everyone.
-            <span className="block text-primary-green mt-2">We Serve Families Who&apos;ve Built Real Wealth.</span>
+            <span className="block text-primary-green mt-2">We Serve Those Who&apos;ve Built Real Wealth.</span>
           </h1>
           <p className="text-xl text-white/80 mb-4 max-w-4xl mx-auto">
             And Refuse to Watch It Bleed Away to Unnecessary Taxes, Poor Planning, and Mediocre Advice.
           </p>
           <p className="text-lg text-white/70 mb-8 max-w-3xl mx-auto">
-            Built For Life Financial exists to deliver the sophisticated wealth strategies, proactive tax optimization, and coordinated planning that high-net-worth families deserve but rarely receive from traditional advisors.
+            Built For Life Financial exists to deliver the sophisticated wealth strategies, proactive tax optimization, and coordinated planning that high-net-worth individuals deserve but rarely receive from traditional advisors.
           </p>
           <Button href="#schedule" size="lg" pulse>
             Schedule My FREE Wealth Strategy Plan

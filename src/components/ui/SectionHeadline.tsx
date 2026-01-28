@@ -42,7 +42,7 @@ export function SectionHeadline({
       {subtitle && (
         <p
           className={cn(
-            "text-lg md:text-xl max-w-3xl",
+            "text-lg md:text-xl max-w-5xl",
             centered && "mx-auto",
             light ? "text-white/80" : "text-warm-gray"
           )}

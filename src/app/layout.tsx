@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   keywords: "financial planning, tax optimization, wealth building, insurance planning, financial advisor",
   openGraph: {
     title: "Built For Life Financial Agency",
-    description: "Finally: A Clear Financial Strategy That Protects Your Family, Optimizes Your Taxes, and Builds Lasting Wealth",
+    description: "Finally: A Clear Financial Strategy That Protects You, Optimizes Your Taxes, and Builds Lasting Wealth",
     type: "website",
   },
 };
