@@ -573,7 +573,7 @@ function FinalCTA() {
           </div>
 
           <p className="text-white/60 text-sm">
-            Limited Availability: We only accept 12 new families per month
+            Limited Availability: We only accept 12 new clients per month
           </p>
         </motion.div>
       </div>
