@@ -2,7 +2,7 @@
 
 import { Logo } from "@/components/ui/Logo";
 import { Button } from "@/components/ui/Button";
-import { Facebook, Instagram, Linkedin, Twitter, Mail, Phone, MapPin } from "lucide-react";
+import { Facebook, Linkedin, Mail, Phone, MapPin } from "lucide-react";
 import Link from "next/link";
 
 const footerLinks = {
@@ -25,10 +25,8 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { icon: Facebook, href: "#", label: "Facebook" },
-  { icon: Instagram, href: "#", label: "Instagram" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Twitter, href: "#", label: "Twitter" },
+  { icon: Linkedin, href: "https://www.linkedin.com/company/built-for-life-financial-agency-insurance-financial-policy/", label: "LinkedIn" },
+  { icon: Facebook, href: "https://www.facebook.com/BuiltForLifeFinancial/", label: "Facebook" },
 ];
 
 export function Footer() {
@@ -60,7 +58,7 @@ export function Footer() {
           <div className="lg:col-span-2">
             <Logo variant="light" className="mb-4" />
             <p className="text-white/70 mb-6 max-w-sm">
-              Restoring the American Dream for hard-working families by teaching wealth-building strategies typically reserved for the ultra-wealthy.
+              Delivering the sophisticated wealth strategies high-net-worth individuals need to protect, optimize, and transfer wealth built for life.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((social) => (
