@@ -606,7 +606,7 @@ function FinalCTA() {
           </div>
 
           <p className="text-white/60 text-sm">
-            Limited to 12 new families per month. Schedule now before spots fill.
+            Limited to 12 new clients per month. Schedule now before spots fill.
           </p>
         </motion.div>
       </div>

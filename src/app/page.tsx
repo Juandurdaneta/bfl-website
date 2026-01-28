@@ -761,7 +761,7 @@ function FinalCTASection() {
           >
             <div className="absolute inset-0 bg-gradient-to-r from-primary-green/10 to-transparent rounded-xl animate-shimmer" />
             <p className="relative text-white font-medium text-lg">
-              <span className="text-primary-green font-bold">Limited Availability:</span> We only accept <span className="text-white font-bold text-xl">12</span> new families per month to maintain quality and personalized service.
+              <span className="text-primary-green font-bold">Limited Availability:</span> We only accept <span className="text-white font-bold text-xl">12</span> new clients per month to maintain quality and personalized service.
             </p>
           </motion.div>
         </motion.div>
