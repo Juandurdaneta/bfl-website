@@ -41,7 +41,7 @@ function HeroSection() {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 pt-40">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           {/* Left Column - Text Content */}
           <div>
             <motion.div
@@ -49,10 +49,10 @@ function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-logo font-bold text-white leading-tight mb-6 uppercase tracking-wide">
+              <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-4xl font-logo font-bold text-white leading-tight mb-6 uppercase tracking-wide">
                 Finally: A Clear Financial Strategy That{" "}
                 <span className="text-primary-green">Protects Your Family</span>, Optimizes Your Taxes, and Builds Lasting Wealth
-                <span className="text-white/80 text-2xl sm:text-3xl lg:text-4xl block mt-2">
+                <span className="text-white/80 text-lg sm:text-xl lg:text-2xl block mt-2">
                   Without the Sales Pitch
                 </span>
               </h1>
