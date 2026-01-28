@@ -49,12 +49,9 @@ function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-4xl font-logo font-bold text-white leading-tight mb-6 uppercase tracking-wide">
-                Finally: A Clear Financial Strategy That{" "}
+              <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-4xl font-logo font-bold text-white leading-tight mb-6 tracking-wide">
+                A Clear Financial Strategy That{" "}
                 <span className="text-primary-green">Protects Your Family</span>, Optimizes Your Taxes, and Builds Lasting Wealth
-                <span className="text-white/80 text-lg sm:text-xl lg:text-2xl block mt-2">
-                  Without the Sales Pitch
-                </span>
               </h1>
             </motion.div>
 

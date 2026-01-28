@@ -269,7 +269,7 @@ function ApproachSection() {
     {
       icon: GraduationCap,
       number: 1,
-      title: "COMPREHENSIVE STRATEGY DEVELOPMENT",
+      title: "Comprehensive Strategy Development",
       subtitle: "We start by understanding your complete financial picture",
       description: "Your income structure (W-2, bonus, equity compensation, business distributions, real estate income). Your assets (concentrated stock positions, business equity, real estate holdings, retirement accounts). Your liabilities and risks. Your goals (retirement timeline, business exit plans, legacy intentions, philanthropic vision). Then we design a comprehensive wealth strategy that integrates tax optimization, estate planning, asset protection, insurance design, and investment coordination into one cohesive system.",
       color: "from-blue-500 to-blue-600",
@@ -277,7 +277,7 @@ function ApproachSection() {
     {
       icon: Target,
       number: 2,
-      title: "PROACTIVE COORDINATION",
+      title: "Proactive Coordination",
       subtitle: "We act as your wealth strategist, integrating your entire advisory team",
       description: "Your CPA files taxes but rarely implements proactive multi-year strategies. Your estate attorney drafted documents years ago but hasn't reviewed them since laws changed. We bring everything together. We coordinate with your CPA on tax projections and planning opportunities. We work with your estate attorney to ensure trusts, asset titling, and beneficiary designations align. We design insurance structures that serve multiple purposes.",
       color: "from-green-500 to-green-600",
@@ -285,7 +285,7 @@ function ApproachSection() {
     {
       icon: Cog,
       number: 3,
-      title: "DISCIPLINED IMPLEMENTATION",
+      title: "Disciplined Implementation",
       subtitle: "Strategy without execution is worthless",
       description: "We don't hand you a plan and wish you luck. We guide you through implementation step by step: Setting up trusts and legal entities. Executing Roth conversions. Implementing captive insurance or premium-financed life insurance structures. Establishing asset protection LLCs and domestic asset protection trusts. Creating systematic diversification plans for concentrated stock positions. You make the strategic decisions. We handle the operational execution.",
       color: "from-purple-500 to-purple-600",
@@ -293,7 +293,7 @@ function ApproachSection() {
     {
       icon: RefreshCw,
       number: 4,
-      title: "ONGOING OPTIMIZATION",
+      title: "Ongoing Optimization",
       subtitle: "Wealth strategy isn't set-it-and-forget-it",
       description: "Tax laws change. Estate exemptions sunset. Business valuations fluctuate. Family circumstances evolve. Market conditions shift. We conduct ongoing reviews: Quarterly check-ins (progress tracking, new opportunities, course corrections). Annual comprehensive reviews (major strategy updates, tax law changes, estate planning adjustments). Proactive outreach when opportunities arise. We bring strategies TO you.",
       color: "from-orange-500 to-orange-600",
@@ -338,7 +338,7 @@ function ApproachSection() {
                 </div>
                 <div>
                   <div className="flex items-center gap-2 mb-1">
-                    <span className="text-sm font-bold text-warm-gray">PILLAR {pillar.number}</span>
+                    <span className="text-sm font-bold text-warm-gray">Pillar {pillar.number}</span>
                   </div>
                   <h3 className="text-xl font-logo font-bold text-dark-navy">{pillar.title}</h3>
                   <p className="text-primary-blue font-medium mb-3 text-sm">{pillar.subtitle}</p>
